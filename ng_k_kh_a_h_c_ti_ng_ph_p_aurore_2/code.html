@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Đăng ký Khóa học - Tiếng Pháp Aurore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "navy": "#0a192f",
+                        "burgundy": "#800020",
+                        "cream": "#fdfbf7",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .antigravity-card {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .sticky-summary {
+            position: sticky;
+            top: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-cream dark:bg-background-dark text-navy dark:text-gray-100 min-h-screen">
+<div class="layout-container flex flex-col min-h-screen">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-10 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-navy dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-navy dark:text-white text-xl font-bold leading-tight tracking-tight uppercase">Aurore</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-navy dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Khóa học</a>
+<a class="text-navy dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Lịch khai giảng</a>
+<a class="text-navy dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Về chúng tôi</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-blue-700 transition-all">
+<span>Đăng nhập</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto w-full px-6 py-10 lg:px-10">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 mb-6">
+<a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary" href="#">Trang chủ</a>
+<span class="text-gray-400 text-sm font-medium">/</span>
+<a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-primary" href="#">Khóa học Tiếng Pháp</a>
+<span class="text-gray-400 text-sm font-medium">/</span>
+<span class="text-navy dark:text-white text-sm font-semibold">Đăng ký khóa học</span>
+</div>
+<!-- Page Heading -->
+<div class="mb-10">
+<h1 class="text-navy dark:text-white text-4xl font-extrabold tracking-tight mb-3">Hoàn tất Đăng ký</h1>
+<p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl">Bắt đầu hành trình chinh phục ngôn ngữ tình yêu cùng đội ngũ giảng viên chuyên môn cao tại Aurore.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Registration Form -->
+<div class="lg:col-span-7 space-y-10">
+<!-- Section 1: Thông tin cá nhân -->
+<section class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 antigravity-card border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-6">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm">1</span>
+<h2 class="text-xl font-bold text-navy dark:text-white">Thông tin cá nhân</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="col-span-2">
+<label class="block mb-2 text-sm font-semibold text-navy dark:text-gray-300">Họ và tên</label>
+<input class="w-full px-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Ví dụ: Nguyễn Văn A" type="text"/>
+</div>
+<div>
+<label class="block mb-2 text-sm font-semibold text-navy dark:text-gray-300">Số điện thoại</label>
+<input class="w-full px-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="090x xxx xxx" type="tel"/>
+</div>
+<div>
+<label class="block mb-2 text-sm font-semibold text-navy dark:text-gray-300">Email nhận tài liệu</label>
+<input class="w-full px-4 py-3.5 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="ten-cua-ban@gmail.com" type="email"/>
+</div>
+</div>
+</section>
+<!-- Section 2: Khung giờ học -->
+<section class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 antigravity-card border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-6">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm">2</span>
+<h2 class="text-xl font-bold text-navy dark:text-white">Xác nhận khung giờ học</h2>
+</div>
+<div class="bg-primary/5 border border-primary/20 rounded-xl p-5 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">calendar_month</span>
+<div>
+<p class="font-bold text-navy dark:text-white">Khóa học: Tiếng Pháp A1 - Căn bản cho người mới</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Lịch học cố định: <span class="font-semibold">Thứ 2 &amp; Thứ 6 (20:30 - 22:00)</span></p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Ngày khai giảng dự kiến: <span class="font-semibold text-burgundy dark:text-red-400">15/10/2023</span></p>
+</div>
+<button class="ml-auto text-sm font-semibold text-primary hover:underline">Thay đổi</button>
+</div>
+</section>
+<!-- Section 3: Phương thức thanh toán -->
+<section class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 antigravity-card border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-6">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm">3</span>
+<h2 class="text-xl font-bold text-navy dark:text-white">Phương thức thanh toán</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+<label class="relative flex flex-col items-center justify-center p-4 border-2 border-primary bg-primary/5 rounded-xl cursor-pointer">
+<input checked="" class="hidden" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-primary text-3xl mb-2">account_balance</span>
+<span class="text-xs font-bold text-center uppercase tracking-wider text-navy dark:text-white">Chuyển khoản</span>
+<div class="absolute top-2 right-2 text-primary">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+</div>
+</label>
+<label class="relative flex flex-col items-center justify-center p-4 border-2 border-gray-100 dark:border-gray-800 rounded-xl cursor-pointer hover:border-primary/50 transition-all">
+<input class="hidden" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-gray-400 text-3xl mb-2">account_balance_wallet</span>
+<span class="text-xs font-bold text-center uppercase tracking-wider text-gray-500">Ví điện tử</span>
+</label>
+<label class="relative flex flex-col items-center justify-center p-4 border-2 border-gray-100 dark:border-gray-800 rounded-xl cursor-pointer hover:border-primary/50 transition-all">
+<input class="hidden" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-gray-400 text-3xl mb-2">storefront</span>
+<span class="text-xs font-bold text-center uppercase tracking-wider text-gray-500">Tại trung tâm</span>
+</label>
+</div>
+<!-- QR Code Area for Bank Transfer -->
+<div class="bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-8 border border-dashed border-gray-300 dark:border-gray-700">
+<div class="bg-white p-3 rounded-xl shadow-sm">
+<img alt="Payment QR Code" class="w-40 h-40" data-alt="A stylized banking QR code for payment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBysgFRi9bO-Z0EWdreemwRcn3PvMG9DG6yZ9p3-u7tUXk2PzI-Td8cFLdCXb0Y6y9kICA3kKI_ZOvk0iwbc5G_xsdX20akatIOWdq_Rtxl7KbwG43BuBvBmMq4mXdJshtbZqQ99K1FpJyo07gJZQ-YyLlq1rCQGyhd4QBcvDrKjap2Fnn5tEk-prLb_05gzijhga6NszCmaQs4P6VeEpQWAmuiLxvBOjJDh7tM-iuZbSqF7foNacg1rpppT6Ktl2UuVak4z5MbuzEa"/>
+</div>
+<div class="flex-1 space-y-3">
+<h3 class="font-bold text-navy dark:text-white">Quét mã để thanh toán nhanh</h3>
+<div class="space-y-1">
+<div class="flex justify-between text-sm">
+<span class="text-gray-500">Ngân hàng:</span>
+<span class="font-semibold">Vietcombank</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-gray-500">Số tài khoản:</span>
+<span class="font-semibold">0123 456 789 999</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-gray-500">Chủ tài khoản:</span>
+<span class="font-semibold uppercase">TIENG PHAP AURORE</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-gray-500">Nội dung:</span>
+<span class="font-semibold text-primary">AURORE_A1_0901234567</span>
+</div>
+</div>
+<button class="w-full py-2 px-4 border border-primary/30 rounded-lg text-primary text-xs font-bold hover:bg-primary/10 transition-colors">
+                                    Sao chép thông tin
+                                </button>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary & Trust Badges -->
+<div class="lg:col-span-5">
+<div class="sticky-summary space-y-6">
+<!-- Summary Card -->
+<div class="bg-navy dark:bg-gray-900 text-white rounded-3xl p-8 shadow-2xl antigravity-card overflow-hidden relative">
+<!-- Background accent -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="text-lg font-bold opacity-70 mb-6 uppercase tracking-widest">Tóm tắt đơn hàng</h2>
+<div class="space-y-6">
+<div>
+<span class="text-xs font-semibold text-blue-300 uppercase tracking-wider block mb-1">Khóa học đã chọn</span>
+<h3 class="text-2xl font-bold">Tiếng Pháp A1 - Căn bản</h3>
+<p class="text-sm opacity-80 mt-1 italic">Hệ sinh thái học tập Aurore Pro</p>
+</div>
+<div class="grid grid-cols-2 gap-4 py-6 border-y border-white/10">
+<div>
+<span class="text-xs font-semibold text-blue-300 block mb-1">Ngày khai giảng</span>
+<p class="font-bold">15/10/2023</p>
+</div>
+<div>
+<span class="text-xs font-semibold text-blue-300 block mb-1">Thời lượng</span>
+<p class="font-bold">24 Buổi / 3 Tháng</p>
+</div>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex justify-between items-center text-sm">
+<span class="opacity-70">Học phí gốc:</span>
+<span class="line-through opacity-50">5.500.000đ</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="opacity-70 text-green-400">Ưu đãi đăng ký sớm:</span>
+<span class="text-green-400">- 500.000đ</span>
+</div>
+<div class="flex justify-between items-end pt-4">
+<span class="text-lg font-medium">Tổng thanh toán:</span>
+<span class="text-4xl font-extrabold text-white">5.000.000đ</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg shadow-xl shadow-primary/40 transition-all mt-6 active:scale-[0.98]">
+                                        Xác nhận Đăng ký &amp; Thanh toán
+                                    </button>
+<p class="text-[10px] text-center opacity-50 mt-4 leading-relaxed uppercase tracking-widest">
+                                        Bằng cách nhấn nút, bạn đồng ý với Điều khoản &amp; Chính sách của Aurore
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Trust Badges -->
+<div class="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex-shrink-0 bg-burgundy/10 text-burgundy rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-navy dark:text-white text-sm">Cam kết đầu ra bằng văn bản</h4>
+<p class="text-xs text-gray-500 leading-relaxed mt-1">Đảm bảo học viên đạt chứng chỉ DELF theo lộ trình đã đăng ký hoặc học lại miễn phí.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex-shrink-0 bg-primary/10 text-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<div>
+<h4 class="font-bold text-navy dark:text-white text-sm">Giảng viên chuyên môn cao</h4>
+<p class="text-xs text-gray-500 leading-relaxed mt-1">100% Giảng viên bản ngữ hoặc Thạc sĩ Ngôn ngữ Pháp với hơn 10 năm kinh nghiệm.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex-shrink-0 bg-green-100 text-green-700 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+</div>
+<div>
+<h4 class="font-bold text-navy dark:text-white text-sm">Lộ trình học tập cá nhân hóa</h4>
+<p class="text-xs text-gray-500 leading-relaxed mt-1">Hệ thống bài tập &amp; tài liệu độc quyền từ Aurore Lab giúp tối ưu hóa thời gian học tập.</p>
+</div>
+</div>
+</div>
+<!-- Assistance Badge -->
+<div class="flex items-center justify-center gap-2 py-4 px-6 border border-primary/20 rounded-xl bg-primary/5">
+<span class="material-symbols-outlined text-primary text-xl">headset_mic</span>
+<p class="text-xs font-semibold text-navy dark:text-gray-300">Cần hỗ trợ đăng ký? <a class="text-primary hover:underline" href="#">Chat ngay với tư vấn viên</a></p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-gray-200 dark:border-gray-800 py-12 px-10 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="size-6 text-gray-400">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor"></path>
+</svg>
+</div>
+<p class="text-sm font-bold text-gray-500 tracking-wider">TIẾNG PHÁP AURORE © 2023</p>
+</div>
+<div class="flex gap-8 text-sm text-gray-400 font-medium">
+<a class="hover:text-primary transition-colors" href="#">Chính sách bảo mật</a>
+<a class="hover:text-primary transition-colors" href="#">Điều khoản dịch vụ</a>
+<a class="hover:text-primary transition-colors" href="#">Liên hệ</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

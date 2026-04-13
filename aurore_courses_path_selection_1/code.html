@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Khóa học của tôi - Aurore Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e293b", // Navy
+                        "accent-burgundy": "#8e1b3b",
+                        "brand-cream": "#fdfbf7",
+                        "background-light": "#f8f9fa",
+                        "text-main": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .progress-bar {
+            height: 6px;
+            border-radius: 3px;
+            background: #e2e8f0;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #8e1b3b;
+            transition: width 0.3s ease;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-background-light text-text-main transition-colors duration-300 min-h-screen">
+<aside class="fixed left-0 top-0 h-full w-20 lg:w-64 bg-primary text-white z-50 flex flex-col items-center lg:items-start py-8 transition-all">
+<div class="px-6 mb-12 flex items-center gap-3">
+<div class="text-white size-8 flex-shrink-0">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="hidden lg:block text-lg font-extrabold tracking-tight uppercase">Aurore Portal</h1>
+</div>
+<nav class="flex-1 w-full space-y-2 px-4">
+<a class="flex items-center gap-4 px-4 py-3 bg-white/10 rounded-xl text-white" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="hidden lg:block font-medium">Khóa học của tôi</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 hover:bg-white/5 rounded-xl text-white/70 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="hidden lg:block font-medium">Khám phá</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 hover:bg-white/5 rounded-xl text-white/70 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">event_note</span>
+<span class="hidden lg:block font-medium">Lịch học</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 hover:bg-white/5 rounded-xl text-white/70 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="hidden lg:block font-medium">Cài đặt</span>
+</a>
+</nav>
+<div class="px-4 w-full mt-auto">
+<div class="flex items-center gap-3 p-4 bg-accent-burgundy/20 rounded-2xl border border-accent-burgundy/30">
+<img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-accent-burgundy shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4D4meL_DHKWAXghr2HlvrlUmWDPu1DwDVCi39sgthYHfkWKHhJ9IbzSVe8Rr-xmAdc8dyF2sY06JGy29eAS3zF2QWkwgen3aloqjVQZbjwHtV5xesdCGc1dVXxcyk2GFOpEXyNeNKl4nx556f3gQ3hET_FIebrRE_5Hvta6xv0S8bY5hSE5RQfzxSn4VMNk_1N-zGsEetOr7KsW1iskRdNo4bU3OPNv8TCL_q0G3l-n1XMNEEXEzSHee7iNiMahalPyLOuOILldt8"/>
+<div class="hidden lg:block overflow-hidden">
+<p class="text-sm font-bold truncate">Minh Anh</p>
+<p class="text-[10px] text-white/60 uppercase tracking-wider">Học viên Premium</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="ml-20 lg:ml-64 p-6 lg:p-12">
+<header class="mb-10 relative overflow-hidden bg-brand-cream rounded-3xl p-8 lg:p-12 border border-primary/5 shadow-sm">
+<div class="absolute right-0 top-0 h-full w-1/3 opacity-10 pointer-events-none">
+<svg class="h-full w-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87,-15.7,85.5,-0.9C83.9,13.9,77.5,27.8,69.1,40.1C60.7,52.4,50.3,63,38,70.1C25.7,77.2,11.4,80.8,-2.4,84.9C-16.1,89,-32.3,93.6,-45.5,88.4C-58.8,83.1,-69.2,68.1,-76.1,52.5C-83.1,36.9,-86.6,20.7,-86.4,4.7C-86.2,-11.2,-82.3,-27,-74,-40.8C-65.7,-54.6,-53.1,-66.4,-39.1,-73.2C-25.1,-80,-12.6,-81.8,1.4,-84.2C15.4,-86.6,29.8,-83.6,44.7,-76.4Z" fill="#8e1b3b" transform="translate(100 100)"></path>
+</svg>
+</div>
+<div class="relative z-10">
+<h2 class="text-3xl lg:text-4xl font-extrabold text-primary mb-2">Chào mừng bạn trở lại, Minh Anh 👋</h2>
+<p class="text-primary/60 text-lg">Bạn đã hoàn thành <span class="text-accent-burgundy font-bold">65%</span> lộ trình tháng này. Tiếp tục thôi nào!</p>
+<div class="mt-8 flex flex-wrap gap-4">
+<div class="flex items-center gap-3 bg-white/80 px-4 py-2.5 rounded-xl border border-primary/5 shadow-sm">
+<span class="material-symbols-outlined text-accent-burgundy">local_fire_department</span>
+<span class="font-bold text-sm">Chuỗi 12 ngày học</span>
+</div>
+<div class="flex items-center gap-3 bg-white/80 px-4 py-2.5 rounded-xl border border-primary/5 shadow-sm">
+<span class="material-symbols-outlined text-accent-burgundy">military_tech</span>
+<span class="font-bold text-sm">3400 Điểm kinh nghiệm</span>
+</div>
+</div>
+</div>
+</header>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+<div class="flex p-1 bg-white border border-primary/10 rounded-2xl w-full md:w-auto">
+<button class="flex-1 md:flex-none px-6 py-2.5 rounded-xl bg-primary text-white font-bold text-sm transition-all">
+                Đang học
+            </button>
+<button class="flex-1 md:flex-none px-6 py-2.5 rounded-xl text-primary/60 font-bold text-sm hover:text-primary transition-all">
+                Đã hoàn thành
+            </button>
+<button class="flex-1 md:flex-none px-6 py-2.5 rounded-xl text-primary/60 font-bold text-sm hover:text-primary transition-all">
+                Khóa học gợi ý
+            </button>
+</div>
+<div class="relative w-full md:w-72">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/40">search</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-2xl border-primary/10 bg-white focus:ring-accent-burgundy focus:border-accent-burgundy text-sm" placeholder="Tìm khóa học..." type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<div class="group bg-white rounded-3xl border border-primary/5 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img alt="French Interior" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2osjp3piSnEW6Fa49Qv1awprJntf0qEdOWcxdY3GSSubKRAOXqTAHRmfQ-5P5uVhZ2KyD5h1wRX76EJn3-N7megWTiZYzTBBzw6fPmkQ7f1G8a0Mw_0M2p8wyVI8ztH8DNufTY4J2vO5YZlxzDofe2YuoZL9Z7L7edncC7cckMcmf2JWoUd18oTA9EkHHp02RIt9JJpGSuqZO4i-PGRLMPxq_bpysURtpcTZ_2ZmBT_vur62YvMpGPcEdqjUVQRkUgVjgEsz9fQOy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-accent-burgundy text-white text-[10px] font-bold px-2.5 py-1 rounded-lg uppercase tracking-wider">Trình độ B1</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-primary mb-1 leading-tight group-hover:text-accent-burgundy transition-colors">Tiếng Pháp Giao tiếp Trung cấp</h3>
+<p class="text-primary/40 text-xs font-medium uppercase tracking-widest mb-4">Mã khóa học: AU-B1-02</p>
+<div class="mb-6">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-primary/60">Tiến độ hoàn thành</span>
+<span class="text-xs font-black text-accent-burgundy">68%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 68%"></div>
+</div>
+</div>
+<div class="bg-brand-cream/50 rounded-xl p-4 mb-6 border border-primary/5">
+<p class="text-[10px] text-primary/50 uppercase font-bold tracking-wider mb-1">Bài học cuối cùng</p>
+<div class="flex items-center gap-3">
+<div class="bg-accent-burgundy/10 text-accent-burgundy size-8 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+</div>
+<p class="text-sm font-bold text-primary/80 truncate">Chương 4: Thảo luận về nghệ thuật</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-primary text-white font-bold py-3.5 rounded-xl hover:bg-primary/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+                        Tiếp tục học
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-3xl border border-primary/5 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img alt="French Books" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZhwq5gZc-Ne29zaijS1eBsJSJQdbFr7t2_FTTF-kd-lPf0yDaAp7QLQDO62_-olhLndyCmH_Yt6HoGgOBAd6F9O4wsH6t-RAkNaTP0MGPHfa42iiSHKeJwPtUGeyxqW0dAXWvMhadkvyVFDvAxxQLXD4LcXOmd2G3vtwc7qif48G0KjDhJ3HEsUTeSmCf6jyT0ruJ6s3UjsYdlVjCYqOBODtBdLAxvFXGAhs3qBzHph4fInuVRAo4Ly4v-xEk5NVSE9F9hEsxMs3Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-accent-burgundy text-white text-[10px] font-bold px-2.5 py-1 rounded-lg uppercase tracking-wider">Luyện thi</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-primary mb-1 leading-tight group-hover:text-accent-burgundy transition-colors">Chinh phục DELF B2 chuyên sâu</h3>
+<p class="text-primary/40 text-xs font-medium uppercase tracking-widest mb-4">Mã khóa học: AU-DELF-B2</p>
+<div class="mb-6">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-primary/60">Tiến độ hoàn thành</span>
+<span class="text-xs font-black text-accent-burgundy">12%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 12%"></div>
+</div>
+</div>
+<div class="bg-brand-cream/50 rounded-xl p-4 mb-6 border border-primary/5">
+<p class="text-[10px] text-primary/50 uppercase font-bold tracking-wider mb-1">Bài học cuối cùng</p>
+<div class="flex items-center gap-3">
+<div class="bg-accent-burgundy/10 text-accent-burgundy size-8 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+</div>
+<p class="text-sm font-bold text-primary/80 truncate">Chương 1: Kỹ năng Viết (Production Écrite)</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-primary text-white font-bold py-3.5 rounded-xl hover:bg-primary/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+                        Tiếp tục học
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-3xl border border-primary/5 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img alt="Business French" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqJV-nBcYcUi0Gcst9gr5NYw91zXNv5aiwB5pB7zQo4rggpHLpdZkhvKjG6s3cC3SPpwYkEwIg0Evzy_fDlYOY3Fgq0Y2WZOdVMXT4PvgGs3dwdRPA7GWygxjDTdpAK1Fwa4kZxCoeUAHCB8-zQqDXlxn-luYUF-s7WX4gDwLzt2vRSjEBi69y8cF63NaZT7O_gykw2hXtCMQfvfWrrwIEIIG6Q63JmRE_PqCjbP0N1L1BnBcKgkSfmJ2LRLkYiY_3rP8-Zjy3IbTt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-accent-burgundy text-white text-[10px] font-bold px-2.5 py-1 rounded-lg uppercase tracking-wider">Chuyên ngành</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-xl font-bold text-primary mb-1 leading-tight group-hover:text-accent-burgundy transition-colors">Tiếng Pháp Thương mại &amp; Công sở</h3>
+<p class="text-primary/40 text-xs font-medium uppercase tracking-widest mb-4">Mã khóa học: AU-PRO-FRENCH</p>
+<div class="mb-6">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-primary/60">Tiến độ hoàn thành</span>
+<span class="text-xs font-black text-accent-burgundy">45%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill" style="width: 45%"></div>
+</div>
+</div>
+<div class="bg-brand-cream/50 rounded-xl p-4 mb-6 border border-primary/5">
+<p class="text-[10px] text-primary/50 uppercase font-bold tracking-wider mb-1">Bài học cuối cùng</p>
+<div class="flex items-center gap-3">
+<div class="bg-accent-burgundy/10 text-accent-burgundy size-8 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+</div>
+<p class="text-sm font-bold text-primary/80 truncate">Chương 3: Viết Email chuyên nghiệp</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-primary text-white font-bold py-3.5 rounded-xl hover:bg-primary/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+                        Tiếp tục học
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20">
+<div class="flex items-center justify-between mb-8">
+<h4 class="text-2xl font-bold text-primary">Gợi ý dành riêng cho bạn</h4>
+<a class="text-sm font-bold text-accent-burgundy hover:underline" href="#">Xem tất cả khóa học</a>
+</div>
+<div class="bg-white rounded-3xl p-8 border border-primary/5 shadow-sm flex flex-col lg:flex-row items-center gap-8">
+<div class="w-full lg:w-48 h-48 rounded-2xl overflow-hidden flex-shrink-0">
+<img alt="Suggested" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuE-kCsUes0luNmL1LZ0ufCAU4OCWrR1wrZc4bUIAe4rbEj4NbJCpgdGG5lb6KLd3zqTyzS-jzUvjH2tdITKJKmfv5S7CpiR_hbNNi9ozLlQFabvgw6erzZ0o8h4-ye6wciNsdWhCJ62VYMyEVCiVvw7zLkmk9EXtuHY4GC90Z2YtVQoaWpHb9ePcAQ4J5cRv4EOB9eFdsyuKiNI8-VscVZMQ822WEUgJNq0vdq5wnrU5Z2zySjfoeETbIHzUrgABfVbw7pukXAhvy"/>
+</div>
+<div class="flex-1">
+<div class="flex gap-2 mb-3">
+<span class="bg-amber-100 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Phổ biến</span>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Sơ cấp A1-A2</span>
+</div>
+<h5 class="text-xl font-bold text-primary mb-2">Tiếng Pháp qua Phim ảnh &amp; Văn hóa</h5>
+<p class="text-primary/60 text-sm mb-6 leading-relaxed">Nâng cao vốn từ vựng và hiểu biết văn hóa Pháp qua các tác phẩm điện ảnh kinh điển. Lộ trình thú vị giúp bạn học mà không cảm thấy áp lực.</p>
+<button class="px-6 py-3 bg-accent-burgundy text-white font-bold rounded-xl shadow-lg shadow-accent-burgundy/20 hover:bg-accent-burgundy/90 transition-all">
+                    Khám phá ngay
+                </button>
+</div>
+</div>
+</div>
+</main>
+<footer class="ml-20 lg:ml-64 bg-white border-t border-primary/5 py-10">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="text-primary size-6">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<p class="text-sm font-bold text-primary">Tiếng Pháp Aurore</p>
+</div>
+<p class="text-sm text-primary/40">© 2024 Aurore Learning Ecosystem. Design pour Excellence.</p>
+<div class="flex gap-6">
+<a class="text-sm text-primary/40 hover:text-accent-burgundy transition-colors" href="#">Hỗ trợ học viên</a>
+<a class="text-sm text-primary/40 hover:text-accent-burgundy transition-colors" href="#">Quy định Portal</a>
+</div>
+</div>
+</footer>
+
+</body></html>

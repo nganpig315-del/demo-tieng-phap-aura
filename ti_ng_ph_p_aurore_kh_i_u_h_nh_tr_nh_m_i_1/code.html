@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tiếng Pháp Aurore - Khởi đầu hành trình mới</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d41132", // Burgundy
+                        "navy": "#1a2a44",
+                        "cream": "#fdfbf7",
+                        "background-light": "#fdfbf7",
+                        "background-dark": "#1a1112",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem", // 16px as requested
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .antigravity-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+        }
+        .antigravity-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(212, 17, 50, 0.1);
+        }
+        .vintage-overlay {
+            background: linear-gradient(rgba(26, 42, 68, 0.4), rgba(26, 42, 68, 0.7));
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-navy dark:text-cream selection:bg-primary/30">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-navy/5 px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">auto_awesome</span>
+</div>
+<h2 class="text-navy dark:text-white text-xl font-extrabold tracking-tight">AURORE</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Khóa học</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Lộ trình</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Giảng viên</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Tài liệu</a>
+</nav>
+<div class="flex gap-3">
+<button class="hidden sm:flex h-11 px-6 items-center justify-center rounded-lg bg-navy/5 text-navy dark:text-white font-bold text-sm">
+                    Đăng nhập
+                </button>
+<button class="flex h-11 px-6 items-center justify-center rounded-lg bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20">
+                    Đăng ký ngay
+                </button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center px-6 lg:px-20 py-12">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center vintage-overlay" data-alt="Vintage street view of Paris with Eiffel Tower in background" style="background-image: linear-gradient(rgba(26, 42, 68, 0.5), rgba(26, 42, 68, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDI3VN0XuIdhtTVyO4374UuyiRfgAz4v6x6qmROVYmlDXgmAh83QHWEEKcDe4RzOFli5X-UpXKJIE7xdS3KW6mgSoFBHJzXSwmLqr_lWx0RSk-5W_prKRJBm9w9M59GWGLBDRgi39Re64Hvg9bOm8Vb6Z0wqZw7Qy4yEZv2-HJ4GetsuIwuXlF5nzvzQ01qhTZF0ZAmeUAy74FFSaQMFyF-ME49qx7knmPLr52xvXDJv9btVCObmZ1bMaS_tL0pH96iyauJDHDFSbE2');">
+</div>
+</div>
+<div class="relative z-10 max-w-4xl text-center flex flex-col items-center gap-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                Hệ sinh thái đào tạo số 1
+            </div>
+<h1 class="font-serif text-white text-5xl md:text-7xl leading-tight italic">
+                Không ngại tiếng Pháp khó,<br/> có <span class="text-primary not-italic">Aurore</span> đồng hành
+            </h1>
+<p class="text-white/80 text-lg md:text-xl max-w-2xl font-light leading-relaxed">
+                Khởi đầu hành trình mới với hệ sinh thái đào tạo tiếng Pháp trực tuyến cá nhân hóa theo chuẩn khung tham chiếu Châu Âu (CEFR).
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="h-14 px-10 rounded-lg bg-primary text-white font-bold text-lg shadow-xl shadow-primary/30 flex items-center justify-center gap-2">
+                    Khám phá lộ trình cá nhân hóa
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="h-14 px-10 rounded-lg bg-white text-navy font-bold text-lg flex items-center justify-center">
+                    Xem lịch khai giảng
+                </button>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="bg-white dark:bg-background-dark py-12 px-6 lg:px-20 border-b border-navy/5">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+<div class="flex flex-col gap-1">
+<p class="text-navy/50 dark:text-cream/50 text-sm font-bold uppercase tracking-tighter">Đối tác &amp; Chứng chỉ</p>
+<div class="flex gap-8 items-center opacity-60 grayscale hover:grayscale-0 transition-all">
+<span class="font-serif text-2xl font-black text-navy dark:text-white">DELF</span>
+<span class="font-serif text-2xl font-black text-navy dark:text-white">DALF</span>
+<span class="font-serif text-2xl font-black text-navy dark:text-white">TCF</span>
+</div>
+</div>
+<div class="h-px w-20 bg-navy/10 hidden md:block"></div>
+<div class="flex flex-wrap gap-12 justify-center">
+<div class="text-center">
+<p class="text-3xl font-extrabold text-navy dark:text-white">5000+</p>
+<p class="text-sm text-navy/60 dark:text-cream/60">Học viên thành công</p>
+</div>
+<div class="text-center">
+<p class="text-3xl font-extrabold text-navy dark:text-white">98%</p>
+<p class="text-sm text-navy/60 dark:text-cream/60">Tỷ lệ đỗ DELF/DALF</p>
+</div>
+<div class="text-center">
+<p class="text-3xl font-extrabold text-navy dark:text-white">150+</p>
+<p class="text-sm text-navy/60 dark:text-cream/60">Giảng viên bản ngữ</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Aurore Section -->
+<section class="py-24 px-6 lg:px-20 bg-cream dark:bg-background-dark/50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-serif text-4xl md:text-5xl text-navy dark:text-white mb-4">Tại sao chọn Aurore?</h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center gap-6 p-8 rounded-xl hover:bg-white dark:hover:bg-background-dark transition-all">
+<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">school</span>
+</div>
+<h3 class="text-xl font-bold">Giảng viên chuyên môn</h3>
+<p class="text-navy/70 dark:text-cream/70 leading-relaxed">
+                        Đội ngũ giảng viên 100% đạt trình độ C1/C2, giàu kinh nghiệm sư phạm và tâm huyết.
+                    </p>
+</div>
+<div class="flex flex-col items-center text-center gap-6 p-8 rounded-xl hover:bg-white dark:hover:bg-background-dark transition-all">
+<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">route</span>
+</div>
+<h3 class="text-xl font-bold">Lộ trình cá nhân hóa</h3>
+<p class="text-navy/70 dark:text-cream/70 leading-relaxed">
+                        Chương trình học thiết kế riêng biệt dựa trên năng lực và mục tiêu của từng học viên.
+                    </p>
+</div>
+<div class="flex flex-col items-center text-center gap-6 p-8 rounded-xl hover:bg-white dark:hover:bg-background-dark transition-all">
+<div class="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<h3 class="text-xl font-bold">Cộng đồng số</h3>
+<p class="text-navy/70 dark:text-cream/70 leading-relaxed">
+                        Kết nối, trao đổi và học hỏi cùng cộng đồng học viên tiếng Pháp lớn nhất Việt Nam.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Course Highlights Section -->
+<section class="py-24 px-6 lg:px-20 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-serif text-4xl text-navy dark:text-white mb-4">Các khóa học tiêu điểm</h2>
+<p class="text-navy/60 dark:text-cream/60">Lựa chọn cấp độ phù hợp để bắt đầu hành trình chinh phục ngôn ngữ tình yêu ngay hôm nay.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group">
+                    Xem tất cả khóa học
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Course Card 1 -->
+<div class="antigravity-card flex flex-col bg-cream dark:bg-navy/10 rounded-lg overflow-hidden border border-navy/5">
+<div class="h-64 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Eiffel tower sketch art for beginners" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyS_zZQs56TKnWG6zs2ETmTlVzwBlCkizSiDhGHBpYUhugoOeKL4rnQbA9yRjZt7n6eHG7NVsE5bPb9fy1OmvPHerE_CKoVreNVW8-1NU910DCwUCQjfnA2S2RPY-6AllXsN_qpE1tLIELyI9kB4MYvCCNzb3cQEI1qUKYPJc4-O_y2U4KZMJ6SO_CbTMgnEDVs6K9ZWnVJi5WRxKmpii_JC-cEJ5MeQrqfnoxP8LEPSaOu55S94ziipdVdT8t0epTHaz7xvhSSsVo"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Bestseller</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Trình độ A1</span>
+<h3 class="text-2xl font-bold text-navy dark:text-white mt-1">Tiếng Pháp vỡ lòng</h3>
+</div>
+<p class="text-navy/60 dark:text-cream/60 text-sm leading-relaxed">
+                            Xây dựng nền tảng phát âm chuẩn và giao tiếp cơ bản trong tình huống đời thường.
+                        </p>
+<div class="pt-4 border-t border-navy/5 flex items-center justify-between">
+<span class="font-bold text-lg">2.500.000đ</span>
+<button class="size-10 rounded-lg bg-navy text-white flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="antigravity-card flex flex-col bg-cream dark:bg-navy/10 rounded-lg overflow-hidden border border-navy/5">
+<div class="h-64 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Paris street cafe atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIE3QFadd1UZslg-ZfgHg2-EXBpNyZzI5nSnDB47tsSdSahXF_etERSLv9Sdj9bw6fiRKekD-FXVW_mWiKpAfolPrWB1ZOyqR7uLe5ff-CT2fFQTriECvgoZiOMA_2dBloGQkwasp-sZereOuC5QvjszbVQaohJGbzZ9JaVYeCNF9QdqhNaKHQ-lTXFei2Aw8dEPowwMjUzEmPlj8rUfMQ8xjW70vtbD9b_8k-OKMAIu3AZaDehyW8WZynMvzOgMkZGno3g52Kt1Oq"/>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Trình độ A2</span>
+<h3 class="text-2xl font-bold text-navy dark:text-white mt-1">Giao tiếp sơ cấp</h3>
+</div>
+<p class="text-navy/60 dark:text-cream/60 text-sm leading-relaxed">
+                            Mở rộng vốn từ vựng và cấu trúc ngữ pháp để tự tin hơn khi trao đổi thông tin.
+                        </p>
+<div class="pt-4 border-t border-navy/5 flex items-center justify-between">
+<span class="font-bold text-lg">3.200.000đ</span>
+<button class="size-10 rounded-lg bg-navy text-white flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="antigravity-card flex flex-col bg-cream dark:bg-navy/10 rounded-lg overflow-hidden border border-navy/5">
+<div class="h-64 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern library and studying vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNlh0bCug-R8XM8G1gwBOTuu9NnFFAgFA0E6T2nzaG_SKw9LWT29UZaxbVO3gduZA9jwcC2J6SnywnKQy6Pw2S8xdUg_Opm0EpxIONdUaJyYzV1d226HGb68v2uPTFlgLI6Yyt4rAFfGer1-f5igwSdycvSc36452I5nIhioHaDypkwCe-gkVKaeBOuLa01oMWdYuM-RaL12zO1HNtCHiTiWPW-pamXvzuexm63TkYjzIvNsyIaUQr5A6QcFgbiRbV_iYL2a12OAR7"/>
+<div class="absolute top-4 left-4 bg-navy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Nâng cao</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Trình độ B1/B2</span>
+<h3 class="text-2xl font-bold text-navy dark:text-white mt-1">Luyện thi DELF</h3>
+</div>
+<p class="text-navy/60 dark:text-cream/60 text-sm leading-relaxed">
+                            Chiến lược làm bài thi hiệu quả và hoàn thiện kỹ năng tranh luận chuyên sâu.
+                        </p>
+<div class="pt-4 border-t border-navy/5 flex items-center justify-between">
+<span class="font-bold text-lg">4.500.000đ</span>
+<button class="size-10 rounded-lg bg-navy text-white flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mini-game Section -->
+<section class="py-20 px-6 lg:px-20 overflow-hidden">
+<div class="max-w-7xl mx-auto bg-navy dark:bg-primary/20 rounded-xl relative overflow-hidden flex flex-col md:flex-row items-center">
+<!-- Decorative circle -->
+<div class="absolute -top-24 -right-24 size-64 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 p-10 md:p-20 flex-1">
+<div class="flex items-center gap-3 text-primary mb-6">
+<span class="material-symbols-outlined fill-1">celebration</span>
+<span class="text-sm font-bold uppercase tracking-widest">Mini-game tháng 10</span>
+</div>
+<h2 class="font-serif text-white text-4xl md:text-5xl mb-6">Thử thách tiếng Pháp - Nhận ngay quà tặng!</h2>
+<p class="text-white/70 text-lg mb-8 max-w-lg">
+                    Chỉ mất 2 phút để kiểm tra trình độ và nhận ngay "Bộ bí kíp 500 từ vựng thông dụng" cùng voucher giảm 20% học phí.
+                </p>
+<button class="h-16 px-12 rounded-lg bg-primary text-white font-black text-xl hover:scale-105 transition-transform shadow-2xl shadow-primary/40">
+                    Bắt đầu thử thách
+                </button>
+</div>
+<div class="relative z-10 p-10 flex-1 flex justify-center">
+<div class="relative size-64 md:size-80">
+<div class="absolute inset-0 bg-primary rounded-full animate-pulse opacity-20 scale-110"></div>
+<div class="size-full bg-white dark:bg-background-dark rounded-full shadow-2xl flex flex-col items-center justify-center border-8 border-primary/20 p-8 text-center">
+<span class="material-symbols-outlined text-primary text-7xl mb-4">card_giftcard</span>
+<p class="text-navy dark:text-white font-bold text-xl leading-tight">Mở hộp quà ngay!</p>
+<p class="text-navy/50 dark:text-cream/50 text-xs mt-2 uppercase font-bold">1.240 người đã nhận</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-navy dark:bg-background-dark text-white py-20 px-6 lg:px-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight">AURORE</h2>
+</div>
+<p class="text-white/50 text-sm leading-relaxed">
+                    Hệ sinh thái đào tạo tiếng Pháp hiện đại nhất Việt Nam, nơi biến giấc mơ Pháp của bạn thành hiện thực.
+                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">social_leaderboard</span>
+</a>
+<a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">movie</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-lg">Khám phá</h4>
+<ul class="flex flex-col gap-3 text-white/60 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Về chúng tôi</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Học phí &amp; Ưu đãi</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cộng đồng học viên</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tuyển dụng</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-lg">Hỗ trợ</h4>
+<ul class="flex flex-col gap-3 text-white/60 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Hướng dẫn đăng ký</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Câu hỏi thường gặp</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Điều khoản dịch vụ</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-lg">Liên hệ</h4>
+<div class="flex flex-col gap-4 text-white/60 text-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p>123 Đường Nguyễn Trãi, Quận 1, TP. Hồ Chí Minh</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<p>bonjour@aurore.edu.vn</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<p>1900 6868</p>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/5 text-center text-white/30 text-xs">
+            © 2023 Aurore French Academy. All rights reserved. Designed for French Excellence.
+        </div>
+</footer>
+</body></html>

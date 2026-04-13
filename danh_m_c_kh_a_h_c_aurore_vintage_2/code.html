@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Danh mục Khóa học Aurore Brand Identity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "aurore-navy": "#1a2a44",
+                        "aurore-burgundy": "#631d2b",
+                        "aurore-gold": "#c5a059",
+                        "parchment": "#fdfaf3",
+                        "parchment-dark": "#120d0e",
+                    },
+                    fontFamily: {
+                        "serif": ["Playfair Display", "serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">@layer base {
+    body {
+        @apply font-sans text-aurore-navy;
+        } h1, h2, h3, h4 {
+        @apply font-serif;
+        }
+    }
+.paper-texture {
+    background-color: #fdfaf3;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuB3cahSgnZ-bJUGXPr25Xs84xX8mGndGAJyr0_DFBe9D48jfqJQzQUQfim1ZFymNSptbGroD974a6L5Jpr47Wy2gOVwLqFdDa-KvzzgU2rPDa6aV3_yFXqcnLm1FYC1ov229FTz2K5E8ll4qKl4H_y14kFeZwmWLIsCqVy3cM9P7zmr0eRsBpAFmELZIPXKzSAsfuLvETUpLh_k9T3pfyAo7_MvxlvBVkeFa5lUyAASyvljm61S3n4AbfuRosr1-KRL66liEjuHiWdS), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBdS0pNWR8Ae0YT9SKuYmVhTWZTpSVqIUpoMDO1oD7EN6fFvFpXGrAY1n3aSAYPbKET2XRrIwNb-wIDmibBPBGNXRKmbv7QGoRug443TiJ3x5eJ3ksm6tlnawpmF_Tp32tOjLKTdDV7YHmi_HKu2JGLRz0DcJRm4zQitDuuxXpLD8JsaSithtFw04n2PDrQ3Z8wiaKfOJzub9YGuyBV-4vO7bDyOy8C6-8yf0FLqsBPrGRg7SlHQvg_iEBP7i9n1kFXxKAtMeFooN9L);
+    background-blend-mode: multiply
+    }
+.line-art-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAwp_-Fa1s1Ap9P7g0TOYA3YmRZW9oKD7baMAEJBeqAAfjkRbApXlq7rq3aGNLddZhexP9HJJxbxgb2vBYcxZ9e3wrAX_mXYS8tb2n2i6gTmOPOtC4r3z31E7uRq5Qq9bHq6ZT-L14yFgIKuRbhHIsDmo0s7WCCOHWDYA8N-20bjrKa7SZkTSHnXusWH4U9ywpcbjwvQSVHD6uRS4bB2wAZRoCfFKQj2dx-fMxdwHv4NChhNT248uPipxFvoe07CNn38-vsPE-u6kQt);
+    background-repeat: repeat
+    }
+.card-border-elegant {
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    position: relative
+    }
+.card-border-elegant::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    pointer-events: none
+    }</style>
+</head>
+<body class="paper-texture line-art-bg min-h-screen">
+<header class="sticky top-0 z-50 bg-parchment/90 backdrop-blur-md border-b border-aurore-gold/20 px-6 lg:px-40 py-4">
+<div class="flex items-center justify-between gap-4">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3">
+<div class="text-aurore-burgundy">
+<svg class="size-9" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div class="flex flex-col leading-none">
+<h1 class="text-2xl font-bold tracking-tight text-aurore-navy uppercase">Aurore</h1>
+<span class="text-[10px] uppercase tracking-[0.2em] text-aurore-burgundy font-medium">L'Excellence du Français</span>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-aurore-burgundy transition-colors" href="#">Catalogue</a>
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-aurore-burgundy transition-colors" href="#">Enseignants</a>
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-aurore-burgundy transition-colors" href="#">Bibliothèque</a>
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-aurore-burgundy transition-colors" href="#">À Propos</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end items-center gap-6">
+<div class="hidden md:flex relative w-full max-w-xs">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-aurore-navy/40 text-sm">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-white/50 border border-aurore-gold/20 rounded-none text-sm italic focus:ring-1 focus:ring-aurore-burgundy focus:border-aurore-burgundy placeholder:text-aurore-navy/30" placeholder="Rechercher un cours..." type="text"/>
+</div>
+<button class="text-aurore-navy hover:text-aurore-burgundy text-xs font-bold uppercase tracking-widest transition-all">
+                Đăng nhập
+            </button>
+<div class="size-10 rounded-full border border-aurore-gold/30 bg-cover bg-center ring-4 ring-parchment shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8Q4saoRuxZuuxXJPg4NaiFjcSkEd_0i1P-U78kxApGrkvMAO9_8vveDY5Pcwormf9IC2Ub5jOe-ymRJdMSztcnAwGykm3PcC0r_62vd8mVa0qFy5Lb4GOpckDIpa3fXPReR1d3ZL1lc2PExXvjIffnQGJ6jYEGUDRwVqXFm2Sd-YAcM1Iz-AsI1bZs8tNl_Yc1gJ8l_DwRZHSJIvd_LR-2FJZe-0Pm6sM4tURueHBqyPdtM6vCS4SHzNDlu0kdDc6WJAob1ySS6q-')"></div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 lg:px-40 py-16">
+<section class="mb-20">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 space-y-8">
+<div class="inline-flex items-center gap-3">
+<div class="h-[1px] w-8 bg-aurore-gold"></div>
+<span class="text-aurore-burgundy text-[11px] font-bold uppercase tracking-[0.3em]">Bienvenue à Aurore</span>
+</div>
+<h1 class="text-5xl lg:text-6xl font-bold leading-[1.1] text-aurore-navy">
+                    L'art de vivre, <br/><span class="italic font-normal text-aurore-burgundy">l'art de parler.</span>
+</h1>
+<p class="text-lg text-aurore-navy/70 leading-relaxed max-w-lg font-light italic">
+                    Découvrez la beauté de la langue française à travers un parcours académique raffiné, alliant tradition pédagogique et élégance contemporaine.
+                </p>
+<div class="flex gap-6 pt-4">
+<button class="bg-aurore-navy text-white px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-aurore-burgundy transition-all duration-300 shadow-xl">
+                        Commencer
+                    </button>
+<button class="border border-aurore-navy/20 text-aurore-navy px-10 py-4 text-xs font-bold uppercase tracking-widest hover:border-aurore-gold hover:text-aurore-gold transition-all duration-300">
+                        Consultation
+                    </button>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="aspect-[4/5] overflow-hidden shadow-2xl relative group border-[12px] border-white">
+<div class="absolute inset-0 bg-aurore-navy/10 mix-blend-multiply group-hover:bg-transparent transition-all duration-700"></div>
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" data-alt="Scène classique de Paris" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9a-I1Q6tHSNenQmI4r7KoxqUxYZ5o-OcH-E3AfAMiw_sULv2Ny89EXan3fbeLokEKaqCHpmwrptZbTuaYAHRBXJyuP6VS94s9nglGwdn85u2bTQPDpa7R8BpwNRU3Bik6K3iP657Jo8MogW6QljwNvaBF_vj9LtY16UHi1BpxyxS_-JUtvxYwThRQWbmHcjaVl2I8IcIIkT6nfl-dgLgY4yofdenjrBa1uAuEP8odmXMScPcx9BBHBz4HDk7eHdMqgv6WM4RAuPY3"/>
+<div class="absolute bottom-0 right-0 p-6">
+<div class="bg-white/90 backdrop-blur p-4 shadow-lg border-t-2 border-aurore-burgundy">
+<span class="block text-[10px] font-bold uppercase tracking-widest text-aurore-burgundy">Collection 2024</span>
+<span class="font-serif italic text-aurore-navy">Paris, France</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 border-b border-aurore-gold/20 pb-8">
+<div class="space-y-2">
+<h2 class="text-3xl font-bold text-aurore-navy">Catalogue des Cours</h2>
+<p class="text-xs uppercase tracking-[0.2em] text-aurore-gold font-semibold">Sélectionnez votre niveau d'excellence</p>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+<button class="whitespace-nowrap flex items-center gap-2 border-b-2 border-aurore-burgundy text-aurore-navy px-2 py-1 text-xs font-bold uppercase tracking-widest">
+                    Tất cả
+                </button>
+<button class="whitespace-nowrap flex items-center gap-2 text-aurore-navy/50 hover:text-aurore-burgundy px-2 py-1 text-xs font-bold uppercase tracking-widest transition-all">
+                    Niveau A1-A2
+                </button>
+<button class="whitespace-nowrap flex items-center gap-2 text-aurore-navy/50 hover:text-aurore-burgundy px-2 py-1 text-xs font-bold uppercase tracking-widest transition-all">
+                    Examens DELF
+                </button>
+<button class="whitespace-nowrap flex items-center gap-2 text-aurore-navy/50 hover:text-aurore-burgundy px-2 py-1 text-xs font-bold uppercase tracking-widest transition-all">
+                    Spécialités
+                </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="group card-border-elegant bg-white/40 hover:bg-white transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-fkhbuYUx95f-ZYevfLZTGm462FQ121caGuH8n0-X-Y0mEeD-Q5j5QNcUN5bPSEcZtcEg8w5UVacEhPUzHPwri9MI01YAFnrRqaabPx_OpZWdayuQiiJpI9b1TQLUjMMp0jeGAQ3jQEMQDAtTj4iOWDrwTYXW01nmmpU2x_u07vkzz85YligpI6b_vAn1H-KkD9WkP-st39zaDy3ChsS5JX6TXR8FjcwD4r1eZ79RGIK4Ap4dS87J8vwB9-K43GcpARmpXJ51ScmC')"></div>
+<div class="absolute inset-0 bg-aurore-navy/20 mix-blend-overlay"></div>
+<div class="absolute top-6 left-6 bg-white/90 backdrop-blur px-3 py-1 text-[10px] font-bold uppercase tracking-widest border-l-2 border-aurore-burgundy text-aurore-burgundy">Niveau A1</div>
+</div>
+<div class="p-8 relative">
+<h3 class="text-xl font-bold mb-3 text-aurore-navy group-hover:text-aurore-burgundy transition-colors italic">Tiếng Pháp Nhập Môn</h3>
+<p class="text-[13px] text-aurore-navy/60 leading-relaxed mb-8 font-light">L'initiation parfaite pour les débutants. Posez les bases d'une prononciation élégante et d'échanges quotidiens raffinés.</p>
+<div class="flex items-center justify-between pt-6 border-t border-aurore-gold/10">
+<span class="text-aurore-burgundy font-serif italic text-lg">1.200.000đ</span>
+<button class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-navy hover:text-aurore-burgundy flex items-center gap-2 transition-all">
+                            Détails <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group card-border-elegant bg-white/40 hover:bg-white transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCToukJWLttwjMK7p4nadjSox_tsxVZRfCM72XMjPPVYTcY2qXHOqe_DjGq_sSEmfR0-uv9MzezeB6UyDzz9B5Hbr9yEw0Vh7bZZlMdWYpL9n0GaBqcM8eoQAQCaLjVIu22ZopX09PAeE_QGNat9KhBAszFyaEMrPm8C80Q5EtZ2H6FlRIqHqJSVoBLChGspiFudUD3EWHGOQAfkp6RlDUzBjiZ-HuGjmdW5z3vkoJahbzEIis7Rrgclm6wfaee2RuqVy6YoSm3Z3Z3')"></div>
+<div class="absolute inset-0 bg-aurore-navy/20 mix-blend-overlay"></div>
+<div class="absolute top-6 left-6 bg-white/90 backdrop-blur px-3 py-1 text-[10px] font-bold uppercase tracking-widest border-l-2 border-aurore-burgundy text-aurore-burgundy">Niveau A2</div>
+</div>
+<div class="p-8 relative">
+<h3 class="text-xl font-bold mb-3 text-aurore-navy group-hover:text-aurore-burgundy transition-colors italic">Tiếng Pháp Sơ Cấp</h3>
+<p class="text-[13px] text-aurore-navy/60 leading-relaxed mb-8 font-light">Affinez votre expression sur des sujets culturels et maîtrisez les nuances grammaticales essentielles de la langue.</p>
+<div class="flex items-center justify-between pt-6 border-t border-aurore-gold/10">
+<span class="text-aurore-burgundy font-serif italic text-lg">1.500.000đ</span>
+<button class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-navy hover:text-aurore-burgundy flex items-center gap-2 transition-all">
+                            Détails <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group card-border-elegant bg-white/40 hover:bg-white transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIYjzUORakzH9Pf1sXv0Qdf0XYEnExBOVm2tE9JsV1n0LjG9rhJlJ6wjPsqcJvmNsxUNQmThzFgyjgsKANgoTNOsFYjJZCeD6XuI-A8jq535cYeIRDypwFeqrrLVgsUTH6QlNetaDS2cIUJtOQxpAlGPoh7dSy6fLfs-EpQUqiDJ9aLwECl2tO1IzmWzOjeYd604iBBo_0ztbUcRTokTbdEZEly7ITOpazmJxL1p-k3neMcUNMDCVxYIfG7PHnCHs595XcouAeXqqK')"></div>
+<div class="absolute inset-0 bg-aurore-navy/20 mix-blend-overlay"></div>
+<div class="absolute top-6 left-6 bg-white/90 backdrop-blur px-3 py-1 text-[10px] font-bold uppercase tracking-widest border-l-2 border-aurore-burgundy text-aurore-burgundy">Niveau B1/B2</div>
+</div>
+<div class="p-8 relative">
+<h3 class="text-xl font-bold mb-3 text-aurore-navy group-hover:text-aurore-burgundy transition-colors italic">Tiếng Pháp Trung Cấp</h3>
+<p class="text-[13px] text-aurore-navy/60 leading-relaxed mb-8 font-light">L'étape vers la fluidité absolue. Engagez-vous dans des débats d'idées et analysez des textes littéraires complexes.</p>
+<div class="flex items-center justify-between pt-6 border-t border-aurore-gold/10">
+<span class="text-aurore-burgundy font-serif italic text-lg">2.000.000đ</span>
+<button class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-navy hover:text-aurore-burgundy flex items-center gap-2 transition-all">
+                            Détails <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group card-border-elegant bg-white/40 hover:bg-white transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD20res2wLkzpKVb9mPdQZx2V-rU5ZG2fl3pAGKUj3KHkPg4WitLmGb4kQijiL_u5Zb4OjrIclT6o-0mmbY40LQuEfxs9EWThej7Fizg-QRbKL8cyS6zyvftQ1-nHAsvwy_CDoQoTn0HEcTtXaAqWWkmqPmsXR3WocbIlJmnABklkk7gipFPYha5pZegZoMBPThf830LqbKvJ9ukkAhOzU2So9J6-wbpwYKsFpwvG-jR2jdqVNPgTWR4uoSSX27mlSQQdfHnFM1x6kW')"></div>
+<div class="absolute inset-0 bg-aurore-navy/20 mix-blend-overlay"></div>
+<div class="absolute top-6 left-6 bg-aurore-burgundy text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">EXAM PREP</div>
+</div>
+<div class="p-8 relative">
+<h3 class="text-xl font-bold mb-3 text-aurore-navy group-hover:text-aurore-burgundy transition-colors italic">Chiến Thuật DELF/DALF</h3>
+<p class="text-[13px] text-aurore-navy/60 leading-relaxed mb-8 font-light">Une préparation académique rigoureuse pour exceller lors de vos examens de certification internationale.</p>
+<div class="flex items-center justify-between pt-6 border-t border-aurore-gold/10">
+<span class="text-aurore-burgundy font-serif italic text-lg">1.800.000đ</span>
+<button class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-navy hover:text-aurore-burgundy flex items-center gap-2 transition-all">
+                            Détails <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group card-border-elegant bg-white/40 hover:bg-white transition-all duration-500 overflow-hidden shadow-sm hover:shadow-2xl">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHI3xPA2GGyNQc9tH0Im_YIqiFpx81T_P239ZEFy-r5W0yHmOnR-QOHDYPvEflIZW66djBn2wEX4kevH1qGrsTU-IMo57g3lorZbg5XhzmSJCx4OMdVbDzHbXv8rWw20MWcJnqGX4bb0d7MXY8aewBvjOSC3aZhOeNXRhF6WwYRCm2v5gt_uUwtQ8gDYDhpmJBaWJgel4xgrGw1YBqpRjUlFnYm2X5jvyGo2kAE9wEWctqBmrgCcEqzbZNRgAgrhJDkwq2mzyx3Y0U')"></div>
+<div class="absolute inset-0 bg-aurore-navy/20 mix-blend-overlay"></div>
+<div class="absolute top-6 left-6 bg-aurore-navy text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">CULTURE</div>
+</div>
+<div class="p-8 relative">
+<h3 class="text-xl font-bold mb-3 text-aurore-navy group-hover:text-aurore-burgundy transition-colors italic">Văn Học &amp; Văn Hóa Pháp</h3>
+<p class="text-[13px] text-aurore-navy/60 leading-relaxed mb-8 font-light">Explorez l'âme de la France à travers son art, sa littérature classique et son histoire fascinante.</p>
+<div class="flex items-center justify-between pt-6 border-t border-aurore-gold/10">
+<span class="text-aurore-burgundy font-serif italic text-lg">1.100.000đ</span>
+<button class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-navy hover:text-aurore-burgundy flex items-center gap-2 transition-all">
+                            Détails <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group border border-aurore-gold/30 bg-aurore-navy text-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col items-center justify-center p-10 text-center relative">
+<div class="absolute inset-4 border border-white/10 pointer-events-none"></div>
+<div class="size-16 mb-6 flex items-center justify-center border border-aurore-gold/50 rounded-full group-hover:bg-aurore-burgundy transition-all duration-500">
+<span class="material-symbols-outlined text-aurore-gold text-3xl">menu_book</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 italic">Sur Mesure</h3>
+<p class="text-[13px] text-white/70 leading-relaxed mb-8 font-light">Un parcours d'excellence personnalisé, conçu exclusivement selon vos ambitions et votre rythme.</p>
+<button class="bg-aurore-gold text-aurore-navy px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-white transition-all duration-300">
+                    Liên hệ tư vấn
+                </button>
+</div>
+</div>
+</section>
+<section class="mt-32 py-16 px-8 relative border-t border-b border-aurore-gold/20 overflow-hidden text-center">
+<div class="absolute inset-0 opacity-5 pointer-events-none grayscale contrast-150" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9a-I1Q6tHSNenQmI4r7KoxqUxYZ5o-OcH-E3AfAMiw_sULv2Ny89EXan3fbeLokEKaqCHpmwrptZbTuaYAHRBXJyuP6VS94s9nglGwdn85u2bTQPDpa7R8BpwNRU3Bik6K3iP657Jo8MogW6QljwNvaBF_vj9LtY16UHi1BpxyxS_-JUtvxYwThRQWbmHcjaVl2I8IcIIkT6nfl-dgLgY4yofdenjrBa1uAuEP8odmXMScPcx9BBHBz4HDk7eHdMqgv6WM4RAuPY3'); background-size: cover;"></div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-6">
+<span class="text-aurore-burgundy text-[10px] font-bold uppercase tracking-[0.5em]">La Gazette d'Aurore</span>
+<h2 class="text-4xl font-bold text-aurore-navy">Restez informé de nos privilèges</h2>
+<p class="text-aurore-navy/60 italic font-light text-sm">Recevez nos conseils linguistiques et invitations exclusives à nos séminaires culturels.</p>
+<form class="flex flex-col sm:flex-row w-full max-w-lg mx-auto gap-0 mt-10">
+<input class="flex-1 px-6 py-4 bg-white/60 backdrop-blur-sm border border-aurore-gold/30 rounded-none focus:ring-1 focus:ring-aurore-burgundy focus:border-aurore-burgundy outline-none placeholder:text-aurore-navy/30" placeholder="Votre adresse email" type="email"/>
+<button class="bg-aurore-navy text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-aurore-burgundy transition-all duration-300" type="submit">S'abonner</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="mt-20 border-t border-aurore-gold/20 py-20 px-6 lg:px-40 bg-aurore-navy text-white">
+<div class="flex flex-col md:flex-row justify-between items-start gap-16">
+<div class="space-y-6 max-w-sm">
+<div class="flex items-center gap-3">
+<div class="text-aurore-gold">
+<svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div class="flex flex-col leading-none">
+<h2 class="text-xl font-bold tracking-tight uppercase">Aurore</h2>
+<span class="text-[8px] uppercase tracking-[0.2em] text-aurore-gold/70">L'Excellence du Français</span>
+</div>
+</div>
+<p class="text-sm text-white/50 leading-relaxed italic font-light">
+                Une institution dédiée à l'enseignement supérieur du français, où la rigueur académique rencontre l'élégance de la culture française.
+            </p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-aurore-gold/50 hover:text-aurore-gold cursor-pointer transition-colors text-xl">auto_stories</span>
+<span class="material-symbols-outlined text-aurore-gold/50 hover:text-aurore-gold cursor-pointer transition-colors text-xl">language</span>
+<span class="material-symbols-outlined text-aurore-gold/50 hover:text-aurore-gold cursor-pointer transition-colors text-xl">mail</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="space-y-6">
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-gold">Navigation</h4>
+<ul class="text-xs text-white/60 space-y-4">
+<li><a class="hover:text-aurore-gold transition-colors" href="#">Tous les cours</a></li>
+<li><a class="hover:text-aurore-gold transition-colors" href="#">Certifications</a></li>
+<li><a class="hover:text-aurore-gold transition-colors" href="#">Tarification</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-gold">Légal</h4>
+<ul class="text-xs text-white/60 space-y-4">
+<li><a class="hover:text-aurore-gold transition-colors" href="#">Confidentialité</a></li>
+<li><a class="hover:text-aurore-gold transition-colors" href="#">Conditions</a></li>
+<li><a class="hover:text-aurore-gold transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="space-y-6 hidden md:block">
+<h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-aurore-gold">Contact</h4>
+<p class="text-xs text-white/60 leading-relaxed font-light italic">
+                    123 Rue de Paris, District 1<br/>Ho Chi Minh Ville, Vietnam
+                </p>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-10 border-t border-white/5 text-center text-[9px] text-white/30 uppercase tracking-[0.4em]">
+        © 2024 Aurore Français. Une marque d'excellence.
+    </div>
+</footer>
+
+</body></html>

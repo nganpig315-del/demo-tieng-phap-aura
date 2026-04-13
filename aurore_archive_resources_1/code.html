@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aurore Archive &amp; Resources - Le Cabinet des Savoirs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "burgundy": "#800020",
+                        "navy": "#000080",
+                        "cream": "#FDFBF7",
+                        "background-light": "#FDFBF7",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>.paper-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBAiYAGxpzsxaKxNP-8YDdT9MwuraGvs3kjV9fBH-IRDaPO8xAwcPSj5S358wQeKoc1hANPIQXY7hvz8wIrfDnudRKs-5k0eGd4jpJKRCG0yl9QP9grRYp7ecfTecm7761P_redmz83M52xWouGG_drondBGLKDLOyc5Q--Xp4ue8PBVbrvVkoZA-OToesuA9NVMXVi2sUJlosbyEiM1s2XVyEEL2FfGNkcMUc0EOShquGVmfuuSQ7n58rcp05iAykoXavJmjhpM2Mw)
+    }
+.card-depth {
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.1)
+    }
+.card-hover:hover {
+    transform: translatey(-2px);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 4px 6px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(0, 0, 0, 0.1)
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111318] dark:text-gray-100 min-h-screen transition-colors duration-200">
+<!-- Global Header -->
+<header class="border-b border-burgundy/10 bg-cream/80 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-10 bg-navy flex items-center justify-center rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">auto_stories</span>
+</div>
+<div>
+<h2 class="text-xl font-bold leading-tight tracking-tight text-navy">Aurore Archive &amp; Resources</h2>
+<p class="text-xs uppercase tracking-widest text-burgundy font-semibold">Premium Student Portal</p>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-navy/70 hover:text-navy text-sm font-medium transition-colors" href="#">Bibliothèque</a>
+<a class="text-navy/70 hover:text-navy text-sm font-medium transition-colors" href="#">Resources</a>
+<a class="text-navy/70 hover:text-navy text-sm font-medium transition-colors border-b-2 border-burgundy" href="#">Archives</a>
+<a class="text-navy/70 hover:text-navy text-sm font-medium transition-colors" href="#">Mon Compte</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-navy/5 rounded-full transition-colors relative">
+<span class="material-symbols-outlined text-navy">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-burgundy rounded-full border-2 border-cream"></span>
+</button>
+<div class="h-8 w-[1px] bg-burgundy/10 mx-2"></div>
+<div class="flex items-center gap-3">
+<div class="text-right hidden sm:block">
+<p class="text-sm font-bold text-navy">Julien Durand</p>
+<p class="text-xs text-burgundy font-medium">Niveau B2</p>
+</div>
+<div class="size-10 rounded-full border-2 border-burgundy/20 overflow-hidden bg-white">
+<img alt="Student profile portrait" class="w-full h-full object-cover" data-alt="Student profile portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIauhxtRzAmvzifL_bzkIhNr64ZTdgaG52x-rBDMnOZNCwHBdOjUSeDXA3mKhGQ0T16VbBYf1VJ-ULxfa1EvTBxiy9zFE5PAUe323lQY97oT27aozkj9nZnTb64T8Iv99IweNICrinS68mW8NuIYTG7P6jOS-87GAgwxsVS6LVFEDb1ZTd_aC3zPzKqyzuMQByztbPy-z5yMiJpxxiyEGBLp8Vce2B8ViH5VtIlwl-cSeRJKv1FeyZ9l0nNC9ZRxPT6DveOw6k-91M"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-6 py-8">
+<!-- Breadcrumbs & Search -->
+<div class="flex flex-col gap-6 mb-12">
+<div class="flex flex-wrap gap-2 text-sm font-medium">
+<a class="text-navy/50 hover:text-navy transition-colors" href="#">Accueil</a>
+<span class="text-navy/30">/</span>
+<span class="text-navy">Le Cabinet des Savoirs</span>
+</div>
+<div class="text-center max-w-2xl mx-auto w-full">
+<h1 class="text-4xl md:text-5xl font-extrabold text-navy mb-4 italic">Le Cabinet des Savoirs</h1>
+<p class="text-burgundy/70 mb-8 font-medium italic">Explorez les archives de la langue française</p>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-navy/40">search_spark</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-white border border-burgundy/10 rounded-xl shadow-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all paper-texture text-lg placeholder:text-navy/30 placeholder:italic" placeholder="Find DELF B1 listening files (NLP Search)..." type="text"/>
+<div class="absolute right-3 inset-y-0 flex items-center">
+<kbd class="hidden sm:inline-block px-2 py-1 text-xs font-semibold text-navy/40 bg-navy/5 rounded border border-navy/10 mr-2">⌘ K</kbd>
+</div>
+</div>
+<div class="mt-3 flex justify-center gap-4 text-xs text-navy/50">
+<span>Try: "Sujets DALF C1"</span>
+<span>•</span>
+<span>"Grammaire Avancée"</span>
+<span>•</span>
+<span>"Podcasts de culture"</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Content: Resource Grid -->
+<div class="lg:col-span-8 space-y-8">
+<div>
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-2xl font-bold text-navy flex items-center gap-2">
+<span class="material-symbols-outlined text-burgundy">account_balance</span>
+                            Explorer les Archives
+                        </h2>
+<button class="text-sm font-bold text-primary hover:underline flex items-center gap-1">
+                            Tout voir <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Sách giáo khoa Card -->
+<div class="group relative bg-white rounded-xl p-6 card-depth paper-texture border border-burgundy/5 transition-all duration-300 card-hover overflow-hidden cursor-pointer">
+<div class="absolute -right-4 -top-4 size-24 bg-burgundy/5 rounded-full blur-2xl group-hover:bg-burgundy/10 transition-colors"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-burgundy text-4xl mb-4">menu_book</span>
+<h3 class="text-xl font-bold text-navy mb-2">Sách giáo khoa</h3>
+<p class="text-sm text-navy/60 leading-relaxed mb-4">Textbooks and annotated literary works from the classic curriculum.</p>
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 bg-navy/5 text-[10px] font-bold text-navy uppercase rounded">240 Volumes</span>
+<span class="px-2 py-1 bg-burgundy/5 text-[10px] font-bold text-burgundy uppercase rounded">PDF &amp; E-PUB</span>
+</div>
+</div>
+</div>
+<!-- Audio Archive Card -->
+<div class="group relative bg-white rounded-xl p-6 card-depth paper-texture border border-burgundy/5 transition-all duration-300 card-hover overflow-hidden cursor-pointer">
+<div class="absolute -right-4 -top-4 size-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">settings_voice</span>
+<h3 class="text-xl font-bold text-navy mb-2">Audio Archive</h3>
+<p class="text-sm text-navy/60 leading-relaxed mb-4">Native recordings, dictations, and phonetic drills with transcripts.</p>
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 bg-navy/5 text-[10px] font-bold text-navy uppercase rounded">1,200 Audio</span>
+<span class="px-2 py-1 bg-primary/5 text-[10px] font-bold text-primary uppercase rounded">High Fidelity</span>
+</div>
+</div>
+</div>
+<!-- Practice Exams Card -->
+<div class="md:col-span-2 group relative bg-white rounded-xl p-6 card-depth paper-texture border border-burgundy/5 transition-all duration-300 card-hover overflow-hidden cursor-pointer">
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="size-20 bg-burgundy/5 flex items-center justify-center rounded-xl">
+<span class="material-symbols-outlined text-burgundy text-5xl">quiz</span>
+</div>
+<div class="flex-1">
+<h3 class="text-xl font-bold text-navy mb-2">Practice Exams (DELF/DALF)</h3>
+<p class="text-sm text-navy/60 leading-relaxed mb-4">Simulated tests under real archival conditions. Access full history of TCF and DELF exam cycles.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-[10px] font-bold uppercase rounded-full">A1-A2</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-[10px] font-bold uppercase rounded-full">B1-B2</span>
+<span class="px-3 py-1 bg-purple-100 text-purple-800 text-[10px] font-bold uppercase rounded-full">C1-C2</span>
+</div>
+</div>
+<div class="hidden md:block">
+<span class="material-symbols-outlined text-navy/20 text-6xl">file_open</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Files Section -->
+<section>
+<h3 class="text-lg font-bold text-navy mb-4 flex items-center gap-2 italic">
+<span class="material-symbols-outlined text-burgundy text-xl">history_edu</span>
+                        Dossiers récents
+                    </h3>
+<div class="bg-white rounded-xl border border-burgundy/5 overflow-hidden shadow-sm paper-texture">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-navy/5 text-navy/50 text-xs uppercase tracking-widest">
+<th class="px-4 py-3 font-bold">Nom du fichier</th>
+<th class="px-4 py-3 font-bold">Type</th>
+<th class="px-4 py-3 font-bold text-right">Dernier accès</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-burgundy/5">
+<tr class="hover:bg-navy/5 transition-colors group cursor-pointer">
+<td class="px-4 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-navy/40">picture_as_pdf</span>
+<span class="text-sm font-bold text-navy group-hover:text-primary transition-colors">Grammaire Progressive - Intermédiaire.pdf</span>
+</div>
+</td>
+<td class="px-4 py-4 text-xs font-medium text-navy/60">Documentation</td>
+<td class="px-4 py-4 text-xs text-navy/40 text-right italic">Il y a 2 heures</td>
+</tr>
+<tr class="hover:bg-navy/5 transition-colors group cursor-pointer">
+<td class="px-4 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-navy/40">audio_file</span>
+<span class="text-sm font-bold text-navy group-hover:text-primary transition-colors">Examen Blanc DELF B2 - Écoute.mp3</span>
+</div>
+</td>
+<td class="px-4 py-4 text-xs font-medium text-navy/60">Audio Archive</td>
+<td class="px-4 py-4 text-xs text-navy/40 text-right italic">Hier</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<!-- Right Sidebar -->
+<aside class="lg:col-span-4 space-y-8">
+<!-- Recommended For You -->
+<div class="bg-navy text-cream rounded-xl p-6 paper-texture relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-burgundy/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold flex items-center gap-2 italic">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+                                Pour vous (B2)
+                            </h3>
+<span class="bg-primary/20 text-primary text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wider">AI Pick</span>
+</div>
+<div class="space-y-4">
+<div class="p-3 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors cursor-pointer group">
+<p class="text-xs text-primary font-bold uppercase mb-1">Culture</p>
+<h4 class="text-sm font-bold mb-1 group-hover:text-primary transition-colors">L'Art de la Gastronomie Française</h4>
+<p class="text-xs text-white/50 italic leading-relaxed">Reading comprehension module tailored for B2 advanced vocabulary.</p>
+</div>
+<div class="p-3 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors cursor-pointer group">
+<p class="text-xs text-primary font-bold uppercase mb-1">Examen</p>
+<h4 class="text-sm font-bold mb-1 group-hover:text-primary transition-colors">DALF C1: Introduction aux Essais</h4>
+<p class="text-xs text-white/50 italic leading-relaxed">Ready to step up? Try this bridging module for C1 certification.</p>
+</div>
+</div>
+<button class="w-full mt-6 py-3 bg-primary text-white text-sm font-bold rounded-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
+                            Voir plus de suggestions
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Recently Viewed List -->
+<div class="bg-white border border-burgundy/10 rounded-xl p-6 shadow-sm paper-texture">
+<h3 class="text-lg font-bold text-navy mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-navy/40">visibility</span>
+                        Consultés récemment
+                    </h3>
+<ul class="space-y-4">
+<li class="flex gap-4">
+<div class="size-12 bg-burgundy/5 flex-shrink-0 flex items-center justify-center rounded border border-burgundy/10">
+<span class="material-symbols-outlined text-burgundy">book_4</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-navy line-clamp-1">Le Petit Prince (Annoté)</h4>
+<p class="text-xs text-navy/40 italic">Il y a 30 minutes</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="size-12 bg-navy/5 flex-shrink-0 flex items-center justify-center rounded border border-navy/10">
+<span class="material-symbols-outlined text-navy">play_circle</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-navy line-clamp-1">Phonétique: Les voyelles nasales</h4>
+<p class="text-xs text-navy/40 italic">Il y a 1 heure</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="size-12 bg-navy/5 flex-shrink-0 flex items-center justify-center rounded border border-navy/10">
+<span class="material-symbols-outlined text-navy">description</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-navy line-clamp-1">Fiches de vocabulaire: Politique</h4>
+<p class="text-xs text-navy/40 italic">Ce matin</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Librarian Tip -->
+<div class="bg-burgundy/5 border border-burgundy/10 rounded-xl p-5 italic text-navy/70 relative">
+<div class="absolute -top-3 left-4 bg-cream px-2">
+<span class="material-symbols-outlined text-burgundy text-sm">lightbulb</span>
+</div>
+<p class="text-sm leading-relaxed">
+                        "Saviez-vous ? Écouter des podcasts à une vitesse de 0.8x peut aider à identifier les liaisons complexes du français formel."
+                    </p>
+<p class="text-[10px] font-bold text-burgundy mt-2 text-right uppercase tracking-tighter">— Le Bibliothécaire</p>
+</div>
+</aside>
+</div>
+</main>
+<footer class="mt-20 border-t border-burgundy/10 bg-white/50 py-12">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="flex items-center gap-2">
+<div class="size-6 bg-navy flex items-center justify-center rounded text-white scale-75">
+<span class="material-symbols-outlined text-xs">auto_stories</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight text-navy">Aurore Archive</h2>
+</div>
+<p class="text-xs text-navy/40 italic">© 2024 Tiếng Pháp Aurore. Tous droits réservés.</p>
+</div>
+<div class="flex gap-8 text-xs font-bold text-navy/60 uppercase tracking-widest">
+<a class="hover:text-burgundy transition-colors" href="#">Politique de confidentialité</a>
+<a class="hover:text-burgundy transition-colors" href="#">Conditions d'utilisation</a>
+<a class="hover:text-burgundy transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<a class="size-8 rounded-full border border-burgundy/10 flex items-center justify-center text-navy/40 hover:text-navy hover:bg-navy/5 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">social_leaderboard</span>
+</a>
+<a class="size-8 rounded-full border border-burgundy/10 flex items-center justify-center text-navy/40 hover:text-navy hover:bg-navy/5 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">link</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

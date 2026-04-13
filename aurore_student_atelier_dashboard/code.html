@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aurore Student Atelier Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33", // Bordeaux Red
+                        "background-light": "#fdfaf6", // Aged Paper Cream
+                        "background-dark": "#111827",
+                        "navy-deep": "#1a1c2c", // Midnight Navy
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .watercolor-bg {
+            background: linear-gradient(rgba(253, 250, 246, 0.8), rgba(253, 250, 246, 0.8)), url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 antialiased">
+<div class="flex min-h-screen">
+<!-- Sidebar: Midnight Navy -->
+<aside class="w-80 bg-navy-deep text-white sticky top-0 h-screen flex flex-col p-6 shadow-2xl z-20">
+<div class="flex items-center gap-3 mb-10">
+<div class="bg-primary p-2 rounded-lg">
+<span class="material-symbols-outlined text-white text-3xl">menu_book</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">AURORE</h2>
+</div>
+<!-- Profile & Progress -->
+<div class="mb-10 text-center bg-white/5 p-6 rounded-xl border border-white/10">
+<div class="relative inline-block mb-4">
+<div class="size-20 rounded-full border-4 border-primary/30 p-1">
+<div class="size-full rounded-full bg-cover bg-center" data-alt="Portrait of a smiling student" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAt_CmG1qIOj3u38OezvoorEDusxlRfPnP8zM8gcRknu9vmhzjgHPdQwWv_zH-2k1bbrjQGI-RCHyUp4bODzGQ8h9WsGmfHPq7j_8wZcvoAlavbOU1tGya5fq1RIrFSJwYtVX3BH2zndnxvaLDht-qNlh4cF8OASonbpQbm3yATSwYofxI9fm9QcVwIMNNZseNk7U8OL126en7u3qlRubkmSq0ycNkB9dJFqyDrn6v3jj-ZS77h_byry6fiHKRh3UOsYeDjHJCwHn_D");'></div>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-[10px] font-bold px-2 py-0.5 rounded-full">B2</div>
+</div>
+<h3 class="text-lg font-medium">Aurore Student</h3>
+<p class="text-white/50 text-xs mb-6 uppercase tracking-widest">Niveau Avancé</p>
+<!-- Progress Meter -->
+<div class="flex flex-col gap-2 text-left">
+<div class="flex justify-between items-end">
+<span class="text-xs text-white/70 font-medium">Maîtrise du Français</span>
+<span class="text-sm font-bold text-primary">75%</span>
+</div>
+<div class="h-2 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 75%;"></div>
+</div>
+<p class="text-[10px] text-white/40 italic">Objectif: C1 Expert</p>
+</div>
+</div>
+<!-- Navigation -->
+<nav class="flex flex-col gap-2 grow">
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl bg-primary text-white font-medium transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Tableau de bord</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-white/60 hover:bg-white/5 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span>Mes Cours</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-white/60 hover:bg-white/5 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span>Bibliothèque</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-white/60 hover:bg-white/5 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span>Communauté</span>
+</a>
+</nav>
+<div class="pt-6 border-t border-white/10">
+<a class="flex items-center gap-4 px-4 py-3 rounded-xl text-white/40 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">help_center</span>
+<span>Centre d'aide</span>
+</a>
+</div>
+</aside>
+<!-- Main Content: Aged Paper Cream -->
+<main class="flex-1 overflow-y-auto">
+<!-- Hero Header -->
+<header class="watercolor-bg p-8 lg:p-12 border-b border-stone-200">
+<div class="max-w-5xl mx-auto">
+<p class="text-primary font-medium tracking-widest uppercase text-xs mb-2">Mardi 24 Octobre 2023</p>
+<h1 class="font-serif text-5xl text-navy-deep font-bold mb-4">Bonjour, Alexandre</h1>
+<p class="text-navy-deep/60 max-w-lg leading-relaxed">
+                        Prêt pour votre immersion quotidienne ? Votre atelier de conversation commence bientôt.
+                    </p>
+</div>
+</header>
+<div class="max-w-5xl mx-auto p-8 lg:p-12 space-y-10">
+<!-- Next Live Session (High Impact Card) -->
+<section>
+<div class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col md:flex-row items-stretch">
+<div class="flex-1 p-8 flex flex-col justify-center gap-4">
+<div class="flex items-center gap-2">
+<span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-bold text-primary tracking-widest uppercase">EN DIRECT DANS 15 MIN</span>
+</div>
+<h2 class="text-2xl font-serif font-bold text-navy-deep">Atelier de Conversation: L'Art de la Table</h2>
+<p class="text-slate-500 text-sm">Apprenez le vocabulaire de la gastronomie française avec Madame Sophie.</p>
+<div class="flex items-center gap-4 pt-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-xl font-medium flex items-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined">videocam</span>
+                                    Rejoindre l'Atelier
+                                </button>
+<div class="text-sm font-medium text-slate-400">
+<span class="text-navy-deep">12 étudiants</span> déjà en ligne
+                                </div>
+</div>
+</div>
+<div class="w-full md:w-72 bg-cover bg-center min-h-[200px]" data-alt="Elegant French dining table setup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAK3XkMpo95fwUkjYwTg3faeuiXOWizbPdvqfBAUNN7c-ibXO4RgAd7C7T9L3NKRdX68bMk0N7T33hkUY1v99BayS6pGq3gx_81Lsyjb3aMPw06ynYA0O4vchfyTZYuHuGVj8UEfN7cQfpsvdY6piiaP98FqbAjf7275LMX2XDN-u4zfzni3Ct5JCJWC4rcVPDu7WKz8gLIP5K9wooAQSJQKpUwXOo80UVlQAwmIgNcf80fBex0xTsIGX5eVpFOj48s0xSIeL0hKbeG");'></div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Course Syllabus (Left/Center) -->
+<div class="lg:col-span-2 space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-serif font-bold text-navy-deep">Votre Parcours : Niveau B2</h3>
+<a class="text-primary text-sm font-medium hover:underline" href="#">Voir tout le programme</a>
+</div>
+<div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm space-y-4">
+<!-- Step 1 (Completed) -->
+<div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+<div class="bg-green-500 text-white rounded-full p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-slate-400 uppercase mb-1">Module 01</p>
+<h4 class="font-bold text-navy-deep">Expressions Idiomatiques du Quotidien</h4>
+<p class="text-sm text-slate-500">Maîtriser les métaphores courantes.</p>
+</div>
+</div>
+<!-- Step 2 (Active) -->
+<div class="flex items-start gap-4 p-4 rounded-xl border-2 border-primary/20 bg-primary/5">
+<div class="bg-primary text-white rounded-full p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-primary uppercase mb-1">En Cours • Module 02</p>
+<h4 class="font-bold text-navy-deep">L'Argumentation à la Française</h4>
+<p class="text-sm text-slate-500">Savoir débattre et structurer sa pensée.</p>
+<div class="mt-3 flex items-center gap-3">
+<div class="flex-1 h-1.5 bg-primary/10 rounded-full">
+<div class="h-full bg-primary" style="width: 45%;"></div>
+</div>
+<span class="text-[10px] font-bold text-primary">45%</span>
+</div>
+</div>
+</div>
+<!-- Step 3 (Locked) -->
+<div class="flex items-start gap-4 p-4 rounded-xl opacity-50 grayscale">
+<div class="bg-slate-200 text-slate-500 rounded-full p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">lock</span>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-slate-400 uppercase mb-1">Module 03</p>
+<h4 class="font-bold text-navy-deep">Littérature et Analyse</h4>
+<p class="text-sm text-slate-500">Découverte des classiques modernes.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Widgets (Right) -->
+<div class="space-y-8">
+<!-- Daily Vocabulary Widget -->
+<div class="bg-navy-deep text-white rounded-2xl p-6 shadow-xl relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 size-32 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-6">
+<span class="text-[10px] font-bold tracking-widest uppercase text-primary">MOT DU JOUR</span>
+<span class="material-symbols-outlined text-white/30">translate</span>
+</div>
+<h4 class="text-3xl font-serif font-bold mb-1">Éphémère</h4>
+<p class="text-white/50 text-xs italic mb-4">/e.fe.mɛʁ/</p>
+<p class="text-sm leading-relaxed text-white/80 mb-6">
+                                    Qui ne dure qu'un jour, qui a une durée très courte.
+                                </p>
+<button class="w-full py-2 border border-white/20 rounded-lg text-xs font-medium hover:bg-white hover:text-navy-deep transition-colors">
+                                    Écouter la prononciation
+                                </button>
+</div>
+</div>
+<!-- Recent Achievements -->
+<div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm">
+<h3 class="text-sm font-bold text-navy-deep uppercase tracking-widest mb-4">Réussites</h3>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-yellow-100 flex items-center justify-center text-yellow-600">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<p class="text-xs font-bold text-navy-deep">Série de 7 jours</p>
+<p class="text-[10px] text-slate-400">Assiduité exemplaire !</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<div>
+<p class="text-xs font-bold text-navy-deep">Bavard</p>
+<p class="text-[10px] text-slate-400">10 ateliers complétés</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lịch khai giảng chi tiết - Tiếng Pháp Aurore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "navy": "#1a2a44",
+                        "burgundy": "#631d23",
+                        "cream": "#fdfbf7",
+                        "gold": "#b59b6d",
+                        "primary": "#1a2a44",
+                    },
+                    fontFamily: {
+                        "serif": ["Newsreader", "serif"],
+                        "sans": ["Montserrat", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-cream text-navy font-serif antialiased;
+            }
+            h1, h2, h3, h4 {
+                @apply font-serif italic tracking-tight;
+            }
+        }
+        .vintage-border {
+            border-style: double;
+            border-width: 3px;
+        }
+        .tab-active {
+            @apply border-b-2 border-burgundy text-burgundy font-bold;
+        }
+    </style>
+</head>
+<body class="bg-cream selection:bg-burgundy selection:text-white">
+<div class="layout-container flex flex-col min-h-screen">
+<header class="flex items-center justify-between px-6 md:px-20 py-8 border-b border-navy/10 bg-cream/90 backdrop-blur sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="size-10 text-burgundy">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<h2 class="text-2xl font-bold uppercase tracking-widest text-navy leading-none">Aurore</h2>
+<span class="text-[10px] uppercase tracking-[0.3em] font-sans font-semibold text-burgundy">Tiếng Pháp Cao Cấp</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-10 font-sans text-xs font-bold uppercase tracking-widest">
+<a class="hover:text-burgundy transition-colors" href="#">Lịch khai giảng</a>
+<a class="hover:text-burgundy transition-colors" href="#">Chương trình học</a>
+<a class="hover:text-burgundy transition-colors" href="#">Thư viện</a>
+<a class="hover:text-burgundy transition-colors" href="#">Liên hệ</a>
+</nav>
+<button class="bg-navy text-cream font-sans text-xs font-bold uppercase tracking-widest px-8 py-3 rounded-none hover:bg-burgundy transition-all duration-300">
+            Tư vấn ngay
+        </button>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-16">
+<div class="text-center mb-16">
+<span class="font-sans text-[11px] uppercase tracking-[0.4em] text-burgundy font-bold mb-4 block">Calendrier d'ouverture</span>
+<h1 class="text-5xl md:text-7xl mb-6">Lịch khai giảng chi tiết</h1>
+<p class="text-lg md:text-xl text-navy/70 max-w-2xl mx-auto italic">
+                Khám phá hệ sinh thái học tập cao cấp. Tìm kiếm lộ trình phù hợp để bắt đầu hành trình chinh phục ngôn ngữ tình yêu.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 md:gap-8 border-b border-navy/10 mb-12 font-sans text-[11px] uppercase tracking-widest font-bold">
+<button class="pb-4 tab-active border-b-2">Tiếng Pháp Cơ Bản (A1/A2)</button>
+<button class="pb-4 text-navy/40 hover:text-burgundy transition-colors border-b-2 border-transparent">Nâng cao (B1/B2)</button>
+<button class="pb-4 text-navy/40 hover:text-burgundy transition-colors border-b-2 border-transparent">Luyện thi &amp; Kỹ năng</button>
+<button class="pb-4 text-navy/40 hover:text-burgundy transition-colors border-b-2 border-transparent">Theo yêu cầu</button>
+</div>
+<div class="bg-white/40 border border-navy/10 p-1 mb-8 shadow-sm">
+<div class="bg-cream border border-navy/5 overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="bg-navy text-cream font-sans text-[10px] uppercase tracking-[0.2em]">
+<th class="px-8 py-5 border-b border-navy/10">Lịch học (Thứ)</th>
+<th class="px-8 py-5 border-b border-navy/10">Hình thức</th>
+<th class="px-8 py-5 border-b border-navy/10">Giờ học</th>
+<th class="px-8 py-5 border-b border-navy/10">Khai giảng (Dự kiến)</th>
+<th class="px-8 py-5 border-b border-navy/10 text-right">Trạng thái</th>
+</tr>
+</thead>
+<tbody class="font-serif">
+<tr class="hover:bg-burgundy/5 transition-colors group">
+<td class="px-8 py-6 border-b border-navy/5">
+<div class="flex flex-col">
+<span class="text-lg font-bold">Thứ 2 &amp; 6</span>
+<span class="text-[11px] font-sans uppercase tracking-wider text-navy/50">Lớp A1.1 Cơ bản</span>
+</div>
+</td>
+<td class="px-8 py-6 border-b border-navy/5">
+<span class="font-sans text-[10px] font-bold px-3 py-1 bg-navy/10 text-navy rounded-full uppercase">Online (Meet)</span>
+</td>
+<td class="px-8 py-6 border-b border-navy/5 text-lg italic">20:30 - 22:00</td>
+<td class="px-8 py-6 border-b border-navy/5 font-bold text-lg">27/02</td>
+<td class="px-8 py-6 border-b border-navy/5 text-right">
+<button class="font-sans text-[10px] uppercase tracking-widest font-bold bg-burgundy text-white px-5 py-2 hover:bg-navy transition-all">Đăng ký</button>
+</td>
+</tr>
+<tr class="hover:bg-burgundy/5 transition-colors group">
+<td class="px-8 py-6 border-b border-navy/5">
+<div class="flex flex-col">
+<span class="text-lg font-bold">Thứ 3 &amp; 7</span>
+<span class="text-[11px] font-sans uppercase tracking-wider text-navy/50">Lớp A1.2 Giao tiếp</span>
+</div>
+</td>
+<td class="px-8 py-6 border-b border-navy/5">
+<span class="font-sans text-[10px] font-bold px-3 py-1 bg-navy/10 text-navy rounded-full uppercase">Online (Zoom)</span>
+</td>
+<td class="px-8 py-6 border-b border-navy/5 text-lg italic">20:30 - 22:00</td>
+<td class="px-8 py-6 border-b border-navy/5 font-bold text-lg">03/03</td>
+<td class="px-8 py-6 border-b border-navy/5 text-right">
+<button class="font-sans text-[10px] uppercase tracking-widest font-bold bg-burgundy text-white px-5 py-2 hover:bg-navy transition-all">Đăng ký</button>
+</td>
+</tr>
+<tr class="hover:bg-burgundy/5 transition-colors group">
+<td class="px-8 py-6 border-b border-navy/5">
+<div class="flex flex-col">
+<span class="text-lg font-bold">Thứ 7 &amp; Chủ Nhật</span>
+<span class="text-[11px] font-sans uppercase tracking-wider text-burgundy font-bold">Lớp Offline Cô Trang</span>
+</div>
+</td>
+<td class="px-8 py-6 border-b border-navy/5">
+<span class="font-sans text-[10px] font-bold px-3 py-1 bg-burgundy/10 text-burgundy rounded-full uppercase">Tại Cơ Sở</span>
+</td>
+<td class="px-8 py-6 border-b border-navy/5 text-lg italic">09:00 - 11:00</td>
+<td class="px-8 py-6 border-b border-navy/5 font-bold text-lg">10/03</td>
+<td class="px-8 py-6 border-b border-navy/5 text-right">
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold text-navy/30">Hết chỗ</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="flex items-center justify-center gap-3 text-sm italic text-navy/60 mb-24">
+<span class="material-symbols-outlined text-sm">info</span>
+<p>Thời gian khai giảng có thể thay đổi sớm hoặc muộn hơn dự kiến tùy theo số lượng học viên.</p>
+</div>
+<section class="mt-20 border-t-2 border-navy/10 pt-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center bg-navy text-cream p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem]">import_contacts</span>
+</div>
+<div class="relative z-10">
+<span class="font-sans text-[11px] uppercase tracking-[0.4em] text-gold font-bold mb-4 block">Personalized Learning</span>
+<h2 class="text-4xl md:text-5xl mb-6">Khóa học theo yêu cầu</h2>
+<p class="text-cream/80 text-lg mb-8 italic">
+                        Thiết kế lộ trình riêng biệt 1-1 hoặc nhóm nhỏ tập trung vào nhu cầu cụ thể: Luyện thi cấp tốc, Tiếng Pháp chuyên ngành, Định cư Pháp...
+                    </p>
+<ul class="space-y-4 mb-10 font-sans text-xs uppercase tracking-widest font-medium">
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 bg-gold rounded-full"></span>
+                            Lộ trình cá nhân hóa 100%
+                        </li>
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 bg-gold rounded-full"></span>
+                            Chủ động thời gian học tập
+                        </li>
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 bg-gold rounded-full"></span>
+                            Cam kết đầu ra theo mục tiêu
+                        </li>
+</ul>
+</div>
+<div class="bg-cream p-10 text-navy relative z-10 shadow-2xl">
+<h3 class="text-2xl mb-6 text-center">Đăng ký tư vấn riêng</h3>
+<form class="space-y-4 font-sans">
+<input class="w-full bg-transparent border-b border-navy/20 py-3 text-sm focus:border-burgundy outline-none transition-colors" placeholder="Họ và tên" type="text"/>
+<input class="w-full bg-transparent border-b border-navy/20 py-3 text-sm focus:border-burgundy outline-none transition-colors" placeholder="Số điện thoại / Zalo" type="tel"/>
+<select class="w-full bg-transparent border-b border-navy/20 py-3 text-sm focus:border-burgundy outline-none transition-colors">
+<option>Chọn mục tiêu học tập</option>
+<option>Luyện thi DELF/DALF</option>
+<option>Giao tiếp cấp tốc</option>
+<option>Học 1-1</option>
+</select>
+<button class="w-full bg-burgundy text-white text-[11px] font-bold uppercase tracking-[0.2em] py-5 mt-6 hover:bg-navy transition-all duration-300">Gửi yêu cầu</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-navy text-cream/60 py-20 px-6 md:px-20 mt-20">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 text-cream mb-6">
+<div class="size-8 text-gold">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold uppercase tracking-widest leading-none">Aurore</h2>
+</div>
+<p class="text-sm italic leading-relaxed">
+                    Nơi khơi nguồn đam mê tiếng Pháp với phong cách giáo dục tinh hoa và tận tâm.
+                </p>
+</div>
+<div>
+<h4 class="text-cream text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Khám phá</h4>
+<ul class="text-sm space-y-4 font-sans uppercase tracking-widest text-[11px]">
+<li><a class="hover:text-gold transition-colors" href="#">Trang chủ</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Khóa học A1-B2</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Luyện thi DELF</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-cream text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Thông tin</h4>
+<ul class="text-sm space-y-4 font-sans uppercase tracking-widest text-[11px]">
+<li><a class="hover:text-gold transition-colors" href="#">Đội ngũ giáo viên</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Phương pháp học</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-cream text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Liên hệ</h4>
+<div class="space-y-4 text-sm italic">
+<p>Paris &amp; Hà Nội</p>
+<p>contact@aurore.edu.vn</p>
+<p>+84 900 000 000</p>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-20 pt-8 border-t border-cream/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[10px] uppercase tracking-widest font-sans">© 2024 Tiếng Pháp Aurore. Maison d'Éducation.</p>
+<div class="flex gap-8">
+<a class="hover:text-gold transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="hover:text-gold transition-colors" href="#"><span class="material-symbols-outlined text-lg">chat_bubble</span></a>
+<a class="hover:text-gold transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera</span></a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

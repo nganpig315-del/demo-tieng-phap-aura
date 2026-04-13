@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Đăng nhập - Tiếng Pháp Aurore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1111d4",
+                        "navy-vintage": "#0d0d1b",
+                        "cream": "#fdfcf8",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101022",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .antigravity-shadow {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+        .glass-card {
+            background: rgba(253, 252, 248, 0.92);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display">
+<!-- Background Illustration Wrapper -->
+<div class="fixed inset-0 z-0 bg-cover bg-center" data-alt="Vintage purple French scenery with Eiffel Tower silhouette" style="background-image: linear-gradient(rgba(17, 17, 212, 0.1), rgba(13, 13, 27, 0.4)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGzRwPYpuPMTWvQJzM3Q_On7oXg_EGJGeAfuD7hsK9BPJuA2eHIow-JSvF35r837ueI3bUTuoCIdRMp_df2XF7gDOtN-hCiSbcR6kAdscu9Dpx8HfZmKlSSRCuyDbClyawjcULA344WEYZ2Mbxs-elTo1DZhct23uXaLZmWwinxFXpY_Ulboq_PX4PzNGYbSODLm_FZ3PcDb-goOlH70UJfX8qIOcKl6px2s242BFHj_9etiGDWUZo3rP5StKfMoLfJYUVUuXzrdtm');">
+<div class="absolute inset-0 bg-gradient-to-tr from-purple-900/40 via-blue-900/20 to-transparent"></div>
+</div>
+<!-- Navigation -->
+<header class="relative z-10 flex items-center justify-between px-10 py-6 max-w-[1200px] mx-auto w-full">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary dark:text-white">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="text-navy-vintage dark:text-white text-2xl font-bold tracking-tight">Tiếng Pháp Aurore</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-navy-vintage/80 dark:text-white/80 text-sm font-medium hover:text-primary transition-colors" href="#">Khóa học</a>
+<a class="text-navy-vintage/80 dark:text-white/80 text-sm font-medium hover:text-primary transition-colors" href="#">Tài liệu</a>
+<a class="text-navy-vintage/80 dark:text-white/80 text-sm font-medium hover:text-primary transition-colors" href="#">Về chúng tôi</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="relative z-10 flex-1 flex items-center justify-center p-6">
+<div class="glass-card antigravity-shadow w-full max-w-[480px] rounded-lg p-10 flex flex-col items-center">
+<!-- Welcome Header -->
+<div class="text-center mb-8">
+<h2 class="text-navy-vintage text-4xl font-bold mb-2">Chào mừng trở lại</h2>
+<p class="text-navy-vintage/60 text-lg italic">Khám phá vẻ đẹp ngôn ngữ Pháp</p>
+</div>
+<!-- Login Form -->
+<form class="w-full space-y-5">
+<!-- Username Field -->
+<div class="flex flex-col gap-2">
+<label class="text-navy-vintage text-sm font-semibold px-1">Email hoặc Số điện thoại</label>
+<input class="w-full bg-white/50 border border-primary/10 rounded-lg h-14 px-5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-navy-vintage/30" placeholder="name@example.com" type="text"/>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center px-1">
+<label class="text-navy-vintage text-sm font-semibold">Mật khẩu</label>
+<a class="text-primary text-xs font-medium hover:underline" href="#">Quên mật khẩu?</a>
+</div>
+<div class="relative group">
+<input class="w-full bg-white/50 border border-primary/10 rounded-lg h-14 px-5 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-navy-vintage/30" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-navy-vintage/40 hover:text-primary" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary hover:bg-primary/90 text-cream font-bold h-14 rounded-lg shadow-lg shadow-primary/20 transition-all mt-4" type="submit">
+                    Đăng nhập
+                </button>
+<!-- Divider -->
+<div class="relative flex items-center py-4">
+<div class="flex-grow border-t border-navy-vintage/10"></div>
+<span class="flex-shrink mx-4 text-navy-vintage/40 text-xs uppercase tracking-widest font-medium">Hoặc đăng nhập với</span>
+<div class="flex-grow border-t border-navy-vintage/10"></div>
+</div>
+<!-- Social Logins -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 h-12 rounded-lg border border-navy-vintage/10 hover:bg-white transition-colors bg-white/40" type="button">
+<img class="h-5 w-5" data-alt="Google logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxmMAdIB75FuwjE8hUNj2HRMVKy-ycOajFoPlZvcAzBNAenznhDwYaXPuQugpU9eYWi_pFRCE4UQkU4850HrbF1CTq01M6sIDxOUjnO84LQkkAIswTwy7b9MmPeZDwi08w5cRRCE84WXCjpvrIfYv4zFNMXPq1Q1PS0MSmAl6cm9_-WSy3E4hnJsgGkpdnc5gemVeiuaWV4NrfX_Gis6pxfLjZyu2bedWvBp2VrozXOvMzzSBCbZoVGSumOi9nqjh0PK76s73uQuWT"/>
+<span class="text-navy-vintage text-sm font-medium">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-12 rounded-lg border border-navy-vintage/10 hover:bg-white transition-colors bg-white/40" type="button">
+<svg class="h-5 w-5 text-[#1877F2]" fill="currentColor" viewbox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+</svg>
+<span class="text-navy-vintage text-sm font-medium">Facebook</span>
+</button>
+</div>
+</form>
+<!-- Footer Link -->
+<div class="mt-10 text-center">
+<p class="text-navy-vintage/60 text-sm">
+                    Chưa có tài khoản? 
+                    <a class="text-primary font-bold hover:underline ml-1" href="#">Đăng ký ngay</a>
+</p>
+</div>
+</div>
+</main>
+<!-- Simple Footer for context -->
+<footer class="relative z-10 py-8 px-10 text-center">
+<p class="text-navy-vintage/40 dark:text-white/30 text-xs">
+            © 2024 Tiếng Pháp Aurore. Học tiếng Pháp theo phong cách nghệ thuật.
+        </p>
+</footer>
+</body></html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trang chủ Aurore - Kết nối Đa nền tảng</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d41132", // Burgundy
+                        "navy": "#1a2a44",
+                        "cream": "#fdfbf7",
+                        "background-light": "#fdfbf7",
+                        "background-dark": "#1a1112",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .antigravity-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            @apply shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05)];
+        }
+        .antigravity-card:hover {
+            transform: translateY(-8px);
+            @apply shadow-[0_20px_40px_-10px_rgba(212,17,50,0.1)];
+        }
+        .vintage-overlay {
+            background: linear-gradient(rgba(26, 42, 68, 0.4), rgba(26, 42, 68, 0.7));
+        }
+        .social-icon-btn {
+            @apply size-9 rounded-full bg-cream border border-navy/10 flex items-center justify-center text-navy hover:text-primary transition-all duration-300;
+        }
+        .connect-card {
+            @apply relative overflow-hidden rounded-xl bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-navy/5;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-navy dark:text-cream selection:bg-primary/30">
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-navy/5 px-4 lg:px-20 py-3">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-9 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">auto_awesome</span>
+</div>
+<h1 class="text-navy dark:text-white text-lg font-extrabold tracking-tight">AURORE</h1>
+</div>
+<div class="hidden xl:flex items-center gap-2 border-x border-navy/5 px-6 mx-6">
+<a class="social-icon-btn" href="#" title="Facebook"><span class="material-symbols-outlined text-sm">social_leaderboard</span></a>
+<a class="social-icon-btn" href="#" title="Instagram"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+<a class="social-icon-btn" href="#" title="TikTok"><span class="material-symbols-outlined text-sm">music_note</span></a>
+<a class="social-icon-btn" href="#" title="YouTube"><span class="material-symbols-outlined text-sm">play_circle</span></a>
+<a class="social-icon-btn" href="#" title="Threads"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="social-icon-btn" href="#" title="Beacons"><span class="material-symbols-outlined text-sm">link</span></a>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Khóa học</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Lộ trình</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Tài liệu</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex h-10 px-6 items-center justify-center rounded-lg bg-primary text-white font-bold text-xs sm:text-sm shadow-lg shadow-primary/20 hover:bg-navy transition-all">
+                ĐĂNG KÝ TƯ VẤN HỌC
+            </button>
+</div>
+</div>
+</header>
+<section class="relative min-h-[80vh] flex items-center justify-center px-6 lg:px-20 py-12">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center vintage-overlay" style="background-image: linear-gradient(rgba(26, 42, 68, 0.5), rgba(26, 42, 68, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDI3VN0XuIdhtTVyO4374UuyiRfgAz4v6x6qmROVYmlDXgmAh83QHWEEKcDe4RzOFli5X-UpXKJIE7xdS3KW6mgSoFBHJzXSwmLqr_lWx0RSk-5W_prKRJBm9w9M59GWGLBDRgi39Re64Hvg9bOm8Vb6Z0wqZw7Qy4yEZv2-HJ4GetsuIwuXlF5nzvzQ01qhTZF0ZAmeUAy74FFSaQMFyF-ME49qx7knmPLr52xvXDJv9btVCObmZ1bMaS_tL0pH96iyauJDHDFSbE2');">
+</div>
+</div>
+<div class="relative z-10 max-w-4xl text-center flex flex-col items-center gap-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+            Hệ sinh thái đào tạo đa nền tảng
+        </div>
+<h2 class="font-serif text-white text-5xl md:text-7xl leading-tight italic">
+            Không ngại tiếng Pháp khó,<br/> có <span class="text-primary not-italic">Aurore</span> đồng hành
+        </h2>
+<p class="text-white/80 text-lg md:text-xl max-w-2xl font-light leading-relaxed">
+            Kết nối cùng Aurore trên mọi nền tảng để không bỏ lỡ kiến thức và cộng đồng học tập sôi động nhất.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="h-14 px-10 rounded-lg bg-primary text-white font-bold text-lg shadow-xl shadow-primary/30 flex items-center justify-center gap-2 hover:scale-105 transition-transform">
+                Đăng ký tư vấn học tiếng Pháp
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="h-14 px-10 rounded-lg bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold text-lg flex items-center justify-center hover:bg-white hover:text-navy transition-all">
+                Khám phá lộ trình
+            </button>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-20 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-serif text-4xl text-navy dark:text-white mb-4">Các khóa học tiêu điểm</h2>
+<p class="text-navy/60 dark:text-cream/60">Lựa chọn cấp độ phù hợp để bắt đầu hành trình chinh phục ngôn ngữ tình yêu ngay hôm nay.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group">
+                Xem tất cả khóa học
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="antigravity-card flex flex-col bg-cream dark:bg-navy/10 rounded-lg overflow-hidden border border-navy/5">
+<div class="h-64 overflow-hidden relative group">
+<img alt="Cours A1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyS_zZQs56TKnWG6zs2ETmTlVzwBlCkizSiDhGHBpYUhugoOeKL4rnQbA9yRjZt7n6eHG7NVsE5bPb9fy1OmvPHerE_CKoVreNVW8-1NU910DCwUCQjfnA2S2RPY-6AllXsN_qpE1tLIELyI9kB4MYvCCNzb3cQEI1qUKYPJc4-O_y2U4KZMJ6SO_CbTMgnEDVs6K9ZWnVJi5WRxKmpii_JC-cEJ5MeQrqfnoxP8LEPSaOu55S94ziipdVdT8t0epTHaz7xvhSSsVo"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Bestseller</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Trình độ A1</span>
+<h3 class="text-2xl font-bold text-navy dark:text-white mt-1">Tiếng Pháp vỡ lòng</h3>
+</div>
+<p class="text-navy/60 dark:text-cream/60 text-sm leading-relaxed">Xây dựng nền tảng phát âm chuẩn và giao tiếp cơ bản trong tình huống đời thường.</p>
+<div class="pt-4 border-t border-navy/5 flex items-center justify-between">
+<span class="font-bold text-lg">2.500.000đ</span>
+<button class="h-10 px-4 rounded-lg bg-navy text-white text-xs font-bold hover:bg-primary transition-colors">CHI TIẾT</button>
+</div>
+</div>
+</div>
+<div class="antigravity-card flex flex-col bg-cream dark:bg-navy/10 rounded-lg overflow-hidden border border-navy/5">
+<div class="h-64 overflow-hidden relative group">
+<img alt="Cours A2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIE3QFadd1UZslg-ZfgHg2-EXBpNyZzI5nSnDB47tsSdSahXF_etERSLv9Sdj9bw6fiRKekD-FXVW_mWiKpAfolPrWB1ZOyqR7uLe5ff-CT2fFQTriECvgoZiOMA_2dBloGQkwasp-sZereOuC5QvjszbVQaohJGbzZ9JaVYeCNF9QdqhNaKHQ-lTXFei2Aw8dEPowwMjUzEmPlj8rUfMQ8xjW70vtbD9b_8k-OKMAIu3AZaDehyW8WZynMvzOgMkZGno3g52Kt1Oq"/>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Trình độ A2</span>
+<h3 class="text-2xl font-bold text-navy dark:text-white mt-1">Giao tiếp sơ cấp</h3>
+</div>
+<p class="text-navy/60 dark:text-cream/60 text-sm leading-relaxed">Mở rộng vốn từ vựng và cấu trúc ngữ pháp để tự tin hơn khi trao đổi thông tin.</p>
+<div class="pt-4 border-t border-navy/5 flex items-center justify-between">
+<span class="font-bold text-lg">3.200.000đ</span>
+<button class="h-10 px-4 rounded-lg bg-navy text-white text-xs font-bold hover:bg-primary transition-colors">CHI TIẾT</button>
+</div>
+</div>
+</div>
+<div class="antigravity-card flex flex-col bg-cream dark:bg-navy/10 rounded-lg overflow-hidden border border-navy/5">
+<div class="h-64 overflow-hidden relative group">
+<img alt="Cours B1/B2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNlh0bCug-R8XM8G1gwBOTuu9NnFFAgFA0E6T2nzaG_SKw9LWT29UZaxbVO3gduZA9jwcC2J6SnywnKQy6Pw2S8xdUg_Opm0EpxIONdUaJyYzV1d226HGb68v2uPTFlgLI6Yyt4rAFfGer1-f5igwSdycvSc36452I5nIhioHaDypkwCe-gkVKaeBOuLa01oMWdYuM-RaL12zO1HNtCHiTiWPW-pamXvzuexm63TkYjzIvNsyIaUQr5A6QcFgbiRbV_iYL2a12OAR7"/>
+<div class="absolute top-4 left-4 bg-navy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Nâng cao</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Trình độ B1/B2</span>
+<h3 class="text-2xl font-bold text-navy dark:text-white mt-1">Luyện thi DELF</h3>
+</div>
+<p class="text-navy/60 dark:text-cream/60 text-sm leading-relaxed">Chiến lược làm bài thi hiệu quả và hoàn thiện kỹ năng tranh luận chuyên sâu.</p>
+<div class="pt-4 border-t border-navy/5 flex items-center justify-between">
+<span class="font-bold text-lg">4.500.000đ</span>
+<button class="h-10 px-4 rounded-lg bg-navy text-white text-xs font-bold hover:bg-primary transition-colors">CHI TIẾT</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-20 bg-cream/50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-serif text-4xl md:text-5xl text-navy mb-4 italic">Kết nối cùng Aurore</h2>
+<p class="text-navy/60 max-w-2xl mx-auto">Cập nhật tin tức, tài liệu học tập và những khoảnh khắc truyền cảm hứng tiếng Pháp trên mọi nền tảng.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<a class="connect-card group" href="#">
+<div class="aspect-square rounded-lg mb-4 overflow-hidden">
+<img alt="Facebook preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIE3QFadd1UZslg-ZfgHg2-EXBpNyZzI5nSnDB47tsSdSahXF_etERSLv9Sdj9bw6fiRKekD-FXVW_mWiKpAfolPrWB1ZOyqR7uLe5ff-CT2fFQTriECvgoZiOMA_2dBloGQkwasp-sZereOuC5QvjszbVQaohJGbzZ9JaVYeCNF9QdqhNaKHQ-lTXFei2Aw8dEPowwMjUzEmPlj8rUfMQ8xjW70vtbD9b_8k-OKMAIu3AZaDehyW8WZynMvzOgMkZGno3g52Kt1Oq"/>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">social_leaderboard</span>
+<span class="text-xs font-bold tracking-tighter text-navy">Facebook</span>
+</div>
+</a>
+<a class="connect-card group" href="#">
+<div class="aspect-square rounded-lg mb-4 overflow-hidden">
+<img alt="Instagram preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyS_zZQs56TKnWG6zs2ETmTlVzwBlCkizSiDhGHBpYUhugoOeKL4rnQbA9yRjZt7n6eHG7NVsE5bPb9fy1OmvPHerE_CKoVreNVW8-1NU910DCwUCQjfnA2S2RPY-6AllXsN_qpE1tLIELyI9kB4MYvCCNzb3cQEI1qUKYPJc4-O_y2U4KZMJ6SO_CbTMgnEDVs6K9ZWnVJi5WRxKmpii_JC-cEJ5MeQrqfnoxP8LEPSaOu55S94ziipdVdT8t0epTHaz7xvhSSsVo"/>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+<span class="text-xs font-bold tracking-tighter text-navy">Instagram</span>
+</div>
+</a>
+<a class="connect-card group" href="#">
+<div class="aspect-square rounded-lg mb-4 overflow-hidden">
+<img alt="TikTok preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI3VN0XuIdhtTVyO4374UuyiRfgAz4v6x6qmROVYmlDXgmAh83QHWEEKcDe4RzOFli5X-UpXKJIE7xdS3KW6mgSoFBHJzXSwmLqr_lWx0RSk-5W_prKRJBm9w9M59GWGLBDRgi39Re64Hvg9bOm8Vb6Z0wqZw7Qy4yEZv2-HJ4GetsuIwuXlF5nzvzQ01qhTZF0ZAmeUAy74FFSaQMFyF-ME49qx7knmPLr52xvXDJv9btVCObmZ1bMaS_tL0pH96iyauJDHDFSbE2"/>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">music_note</span>
+<span class="text-xs font-bold tracking-tighter text-navy">TikTok</span>
+</div>
+</a>
+<a class="connect-card group" href="#">
+<div class="aspect-square rounded-lg mb-4 overflow-hidden">
+<img alt="YouTube preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNlh0bCug-R8XM8G1gwBOTuu9NnFFAgFA0E6T2nzaG_SKw9LWT29UZaxbVO3gduZA9jwcC2J6SnywnKQy6Pw2S8xdUg_Opm0EpxIONdUaJyYzV1d226HGb68v2uPTFlgLI6Yyt4rAFfGer1-f5igwSdycvSc36452I5nIhioHaDypkwCe-gkVKaeBOuLa01oMWdYuM-RaL12zO1HNtCHiTiWPW-pamXvzuexm63TkYjzIvNsyIaUQr5A6QcFgbiRbV_iYL2a12OAR7"/>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+<span class="text-xs font-bold tracking-tighter text-navy">YouTube</span>
+</div>
+</a>
+<a class="connect-card group" href="#">
+<div class="aspect-square rounded-lg mb-4 overflow-hidden">
+<img alt="Threads preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyS_zZQs56TKnWG6zs2ETmTlVzwBlCkizSiDhGHBpYUhugoOeKL4rnQbA9yRjZt7n6eHG7NVsE5bPb9fy1OmvPHerE_CKoVreNVW8-1NU910DCwUCQjfnA2S2RPY-6AllXsN_qpE1tLIELyI9kB4MYvCCNzb3cQEI1qUKYPJc4-O_y2U4KZMJ6SO_CbTMgnEDVs6K9ZWnVJi5WRxKmpii_JC-cEJ5MeQrqfnoxP8LEPSaOu55S94ziipdVdT8t0epTHaz7xvhSSsVo"/>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">alternate_email</span>
+<span class="text-xs font-bold tracking-tighter text-navy">Threads</span>
+</div>
+</a>
+<a class="connect-card group" href="#">
+<div class="aspect-square rounded-lg mb-4 overflow-hidden flex items-center justify-center bg-navy text-white">
+<span class="material-symbols-outlined text-4xl">link</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">qr_code_2</span>
+<span class="text-xs font-bold tracking-tighter text-navy">Beacons</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-20 bg-white">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div class="space-y-8">
+<h2 class="font-serif text-4xl text-navy">Gửi tin nhắn cho chúng tôi</h2>
+<p class="text-navy/60">Bạn có bất kỳ thắc mắc nào về lộ trình học hay các khóa học? Hãy để lại thông tin, đội ngũ Aurore sẽ phản hồi bạn sớm nhất.</p>
+<div class="space-y-4">
+<a class="flex items-center gap-4 p-4 rounded-lg bg-cream border border-navy/5 hover:border-primary transition-colors group" href="mailto:bonjour@aurore.edu.vn">
+<span class="material-symbols-outlined text-primary bg-white p-3 rounded-full shadow-sm">mail</span>
+<div>
+<p class="text-xs font-bold text-navy/40 uppercase">Email</p>
+<p class="font-bold text-navy">bonjour@aurore.edu.vn</p>
+</div>
+</a>
+<a class="flex items-center gap-4 p-4 rounded-lg bg-cream border border-navy/5 hover:border-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary bg-white p-3 rounded-full shadow-sm">chat</span>
+<div>
+<p class="text-xs font-bold text-navy/40 uppercase">Messenger</p>
+<p class="font-bold text-navy">m.me/tiengphapaurore</p>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-cream p-8 rounded-xl border border-navy/5 shadow-sm">
+<form action="#" class="space-y-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold text-navy/60 uppercase mb-2">Họ và tên</label>
+<input class="w-full rounded-lg border-navy/10 focus:border-primary focus:ring-primary text-sm p-3" placeholder="Nguyễn Văn A" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-navy/60 uppercase mb-2">Số điện thoại</label>
+<input class="w-full rounded-lg border-navy/10 focus:border-primary focus:ring-primary text-sm p-3" placeholder="090 123 4567" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-navy/60 uppercase mb-2">Lời nhắn của bạn</label>
+<textarea class="w-full rounded-lg border-navy/10 focus:border-primary focus:ring-primary text-sm p-3" placeholder="Bạn quan tâm đến khóa học nào?" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-navy transition-all shadow-lg shadow-primary/20" type="submit">
+                    GỬI YÊU CẦU TƯ VẤN
+                </button>
+</form>
+</div>
+</div>
+</section>
+<footer class="bg-navy text-white pt-20 pb-10 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h2 class="text-2xl font-extrabold tracking-tight">AURORE</h2>
+</div>
+<p class="text-white/60 text-sm leading-relaxed">
+                Hệ sinh thái đào tạo tiếng Pháp hiện đại nhất Việt Nam. Đồng hành cùng bạn trên mọi nền tảng số.
+            </p>
+<div class="grid grid-cols-3 gap-3">
+<a class="social-icon-btn !bg-white/5 !border-white/10 !text-white hover:!bg-primary" href="#" title="Facebook"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="social-icon-btn !bg-white/5 !border-white/10 !text-white hover:!bg-primary" href="#" title="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="social-icon-btn !bg-white/5 !border-white/10 !text-white hover:!bg-primary" href="#" title="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+<a class="social-icon-btn !bg-white/5 !border-white/10 !text-white hover:!bg-primary" href="#" title="YouTube"><span class="material-symbols-outlined">play_circle</span></a>
+<a class="social-icon-btn !bg-white/5 !border-white/10 !text-white hover:!bg-primary" href="#" title="Threads"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="social-icon-btn !bg-white/5 !border-white/10 !text-white hover:!bg-primary" href="#" title="Beacons"><span class="material-symbols-outlined">link</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-lg border-b border-white/10 pb-2">Khám phá</h4>
+<ul class="flex flex-col gap-3 text-white/50 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Về chúng tôi</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Khóa học A1-B2</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cộng đồng học viên</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Lịch khai giảng</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-lg border-b border-white/10 pb-2">Hỗ trợ</h4>
+<ul class="flex flex-col gap-3 text-white/50 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Hướng dẫn đăng ký</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Câu hỏi thường gặp</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tài liệu miễn phí</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-lg border-b border-white/10 pb-2">Liên hệ</h4>
+<div class="flex flex-col gap-4 text-white/60 text-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p>123 Đường Nguyễn Trãi, Quận 1, TP. Hồ Chí Minh</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<p>bonjour@aurore.edu.vn</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<p>1900 6868</p>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-white/30 text-xs">
+<p>© 2023 Aurore French Academy. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Điều khoản</a>
+<a class="hover:text-white transition-colors" href="#">Bảo mật</a>
+<a class="hover:text-white transition-colors" href="#">Sơ đồ trang</a>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-6 right-6 z-50 md:hidden">
+<button class="size-14 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</button>
+</div>
+
+</body></html>

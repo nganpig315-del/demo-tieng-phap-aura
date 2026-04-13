@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trung tâm Kết nối Aurore Social Platform</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "navy": "#1a2a44",
+                        "burgundy": "#631d23",
+                        "cream": "#fdfbf7",
+                        "gold": "#b59b6d",
+                        "primary": "#1a2a44",
+                    },
+                    fontFamily: {
+                        "serif": ["Newsreader", "serif"],
+                        "sans": ["Montserrat", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-cream text-navy font-serif antialiased;
+            }
+            h1, h2, h3, h4 {
+                @apply font-serif italic tracking-tight;
+            }
+        }
+        .vintage-card {
+            @apply bg-white border border-navy/10 relative overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-1;
+        }
+        .vintage-card::after {
+            content: '';
+            @apply absolute inset-0 border-2 border-transparent transition-all duration-300 pointer-events-none;
+        }
+        .vintage-card:hover::after {
+            @apply border-burgundy/20 m-2;
+        }
+        .image-overlay {
+            background: linear-gradient(to bottom, transparent 0%, rgba(26, 42, 68, 0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-cream selection:bg-burgundy selection:text-white">
+<div class="layout-container flex flex-col min-h-screen">
+<header class="flex items-center justify-between px-6 md:px-20 py-8 border-b border-navy/10 bg-cream/90 backdrop-blur sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="size-10 text-burgundy">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<h2 class="text-2xl font-bold uppercase tracking-widest text-navy leading-none">Aurore</h2>
+<span class="text-[10px] uppercase tracking-[0.3em] font-sans font-semibold text-burgundy">Tiếng Pháp Cao Cấp</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-10 font-sans text-xs font-bold uppercase tracking-widest">
+<a class="hover:text-burgundy transition-colors" href="#">Lịch khai giảng</a>
+<a class="hover:text-burgundy transition-colors" href="#">Chương trình học</a>
+<a class="hover:text-gold transition-colors" href="#">Thư viện</a>
+<a class="text-burgundy border-b border-burgundy pb-1" href="#">Kết nối</a>
+</nav>
+<div class="flex gap-4">
+<button class="bg-navy text-cream font-sans text-xs font-bold uppercase tracking-widest px-8 py-3 rounded-none hover:bg-burgundy transition-all duration-300">
+                Tư vấn ngay
+            </button>
+</div>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-16">
+<div class="text-center mb-20">
+<span class="font-sans text-[11px] uppercase tracking-[0.4em] text-burgundy font-bold mb-4 block">Aurore Social Ecosystem</span>
+<h1 class="text-5xl md:text-7xl mb-6">Trung tâm Kết nối</h1>
+<p class="text-lg md:text-xl text-navy/70 max-w-2xl mx-auto italic">
+                Cùng Aurore lan tỏa tình yêu ngôn ngữ và văn hóa Pháp qua các nền tảng mạng xã hội học thuật đầy cảm hứng.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+<a class="vintage-card group" href="https://beacons.ai/tiengphapauroree" target="_blank">
+<div class="h-48 overflow-hidden">
+<img alt="Beacons Profile" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqk3InLwkIENFByInB6RVEuBF-oBHGbbX3zi_AeDliVh1x6Zwz5LbrexkBbVWLzrg0_GyyDfYQz22mjXpljXGHs6tB0TFrVqdO9R0uLdsYuAtGeJEKhaS2giHFYP697mstm4KvCJUXZeePv41mOmiqTa8iTpbnmpd5jcr9G7XltAM_8VoaJOXooyg2fhmNVCt9W_ktt2DC-R2-tMKzTERbDKx_fgtU7CW2xR5W7TilEnFx1AWX16XF0jnBUmsKO--6Gsx2A8SUXL6k"/>
+<div class="absolute inset-0 image-overlay opacity-60"></div>
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-10 left-6 bg-white p-3 shadow-lg border border-navy/5">
+<span class="material-symbols-outlined text-navy text-3xl">link</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Beacons Bio</h3>
+<p class="font-sans text-[11px] uppercase tracking-widest text-navy/60">Tổng hợp mọi liên kết quan trọng</p>
+</div>
+</a>
+<a class="vintage-card group" href="#">
+<div class="h-48 overflow-hidden">
+<img alt="Facebook Fanpage" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk7q20wd_8INSfxh6JyMl1a_8do8Wys4V8dM101luEqX_wiUUvHo35rimiUvF9aRVaODVnHaYNhXy4RW5PNQXsLqsVsoV5XrhCVSc3tk5zXihvQ26s62dvyT4NyDVW3IEpbO7DpR7orw3wG6lSCbuMYzHFHpHtE9_f0OZu8Wa-EziKDbv3Y71Ss5Nw0UtcK2Bbkj36sCIocgQ8-Np18-HRVxFU6_PBjT0Q5gv36KsD69k-XIkO0IsMgL9bcaXdZo_wS36zQPvrAvxO"/>
+<div class="absolute inset-0 image-overlay opacity-60"></div>
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-10 left-6 bg-white p-3 shadow-lg border border-navy/5">
+<span class="material-symbols-outlined text-navy text-3xl">social_leaderboard</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Facebook Fanpage</h3>
+<p class="font-sans text-[11px] uppercase tracking-widest text-navy/60">Cộng đồng học viên Aurore</p>
+</div>
+</a>
+<a class="vintage-card group" href="#">
+<div class="h-48 overflow-hidden">
+<img alt="Instagram" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuiyB9n6KjLY1B17T751EZSh7rv_ueTWvQAMy9krn4ZDTe-oXQ7ja24JHOQCmXUVP-7MLFE8FHcnfdu7kM_vU1Msdet0WeKQ1n1SGITuGJyHYDWpIXuMI2Lsnprrq8a0YlhPEjRzxSsmua3Y29hZEZNNumcufP1jKbZ8huFMVi7TGVAgcD-Hzxm_KvAp7S4Ds0zpTwSLkEiGxWf8ljEJ0URkdpnGJe7GBWNdCIgMQEV9PSJhh70oYbC0BuEluG4Sdyj7AOd9JA7F1C"/>
+<div class="absolute inset-0 image-overlay opacity-60"></div>
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-10 left-6 bg-white p-3 shadow-lg border border-navy/5">
+<span class="material-symbols-outlined text-navy text-3xl">photo_camera</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Instagram</h3>
+<p class="font-sans text-[11px] uppercase tracking-widest text-navy/60">Phong cách sống &amp; Cảm hứng Pháp</p>
+</div>
+</a>
+<a class="vintage-card group" href="https://www.tiktok.com/@tiengphapaurore" target="_blank">
+<div class="h-48 overflow-hidden">
+<img alt="TikTok" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEtFF8uby6obFYNL3QOkxwGkTJxz7B7hYShcNToh3iVStt687ZQr1r5-2404_PlYE1PjpkBwmtYCmtKQr9UXqhfeXrc92ub9jM97gvPagropThfKuVUB1BHS7BBG52szdXS_CAZ7VKOIo50PntIjkVgOw_ub44B7zwNNDDBf-rOFEyaSfwmu7Cgwu2MzrcUwwh5FrJ3oX13VmsDLVzq9rELRxJ76BcWnLuuZhmkjH_1hg6r7obDMjh9mXSFY3soqhdf68Ni1XQ-ilH"/>
+<div class="absolute inset-0 image-overlay opacity-60"></div>
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-10 left-6 bg-white p-3 shadow-lg border border-navy/5">
+<span class="material-symbols-outlined text-navy text-3xl">video_library</span>
+</div>
+<h3 class="text-xl font-bold mb-2">TikTok @tiengphapaurore</h3>
+<p class="font-sans text-[11px] uppercase tracking-widest text-navy/60">Học tiếng Pháp qua video ngắn</p>
+</div>
+</a>
+<a class="vintage-card group" href="#">
+<div class="h-48 overflow-hidden">
+<img alt="Threads" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUNRocA0GEY7AlGX-3pBdqhZisQt7hLQkTazqNXCsiT1UuKNkQd0pZlmjYF27TaUgEoHL-PhFoph6o4P2uDYcwcJ7ldMrzzn4OH0ITVniSgqDiJT8adsKIqICJJZd0gQclk4O4oousDqk5Px_Wy4kE8NeGfq80T4qBsXOa2a5QKxqKv9WdCgKCwgHuX_-p6waDhGAoWKnaXn7ktIGgDc8rNos3jZ83xr67F326POX1E6RucDXXJAzYIzvSXpR9-rBXrywWU7we_3KZ"/>
+<div class="absolute inset-0 image-overlay opacity-60"></div>
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-10 left-6 bg-white p-3 shadow-lg border border-navy/5">
+<span class="material-symbols-outlined text-navy text-3xl">alternate_email</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Threads</h3>
+<p class="font-sans text-[11px] uppercase tracking-widest text-navy/60">Chia sẻ suy nghĩ &amp; kiến thức</p>
+</div>
+</a>
+<a class="vintage-card group" href="#">
+<div class="h-48 overflow-hidden">
+<img alt="YouTube" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7VQnt35hw9wD-xdPQEp9Zex6dB6wy9cEMnWlqwPhqeM5yiWFiQjWU_tPcD_46BD0w31BtNUKT0cgnY7z5BmYMpldSQ4JN4pls1oHaaed4ZIVKN_-UY9aPLoIYgdmL0zGzAXaKINkDIsvLlQ-IJmOkQbZk__qnzXee4Ux7dNCpOIVCqu4oD9xmLINmDfVH4FU-u53pXlKVIon0JIMCthh4SfpGz6t5QV-V_RO05TJQUJdiMF_l7c8ccntt1FZIfQID-Q3_CZl_ioVN"/>
+<div class="absolute inset-0 image-overlay opacity-60"></div>
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-10 left-6 bg-white p-3 shadow-lg border border-navy/5">
+<span class="material-symbols-outlined text-navy text-3xl">smart_display</span>
+</div>
+<h3 class="text-xl font-bold mb-2">YouTube Channel</h3>
+<p class="font-sans text-[11px] uppercase tracking-widest text-navy/60">Bài giảng chuyên sâu &amp; Podcast</p>
+</div>
+</a>
+</div>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="flex-1 space-y-8">
+<div>
+<h2 class="text-4xl mb-6">Liên hệ trực tiếp</h2>
+<p class="text-navy/70 italic text-lg leading-relaxed mb-8">
+                        Đội ngũ Aurore luôn sẵn sàng hỗ trợ bạn trên mọi nền tảng. Hãy gửi tin nhắn để được tư vấn lộ trình học phù hợp nhất.
+                    </p>
+</div>
+<div class="space-y-4">
+<button class="w-full md:w-auto bg-navy text-cream flex items-center justify-center gap-4 px-10 py-5 font-sans text-xs font-bold uppercase tracking-[0.2em] hover:bg-burgundy transition-all group">
+<span class="material-symbols-outlined">chat</span>
+                        Gửi tin nhắn qua Messenger
+                    </button>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="flex-1 bg-burgundy text-white px-8 py-5 font-sans text-xs font-bold uppercase tracking-[0.2em] hover:bg-navy transition-all">
+                            Đăng ký tư vấn học tiếng Pháp
+                        </button>
+<button class="flex-1 border-2 border-navy text-navy px-8 py-5 font-sans text-xs font-bold uppercase tracking-[0.2em] hover:bg-navy hover:text-white transition-all">
+                            Khám phá khóa học
+                        </button>
+</div>
+</div>
+</div>
+<div class="w-full md:w-[400px] bg-white p-8 border border-navy/10 shadow-xl relative">
+<div class="absolute -top-3 -right-3 w-12 h-12 border-t-2 border-r-2 border-burgundy"></div>
+<h3 class="text-2xl mb-6">Yêu cầu liên hệ nhanh</h3>
+<form class="space-y-4 font-sans">
+<div>
+<label class="text-[10px] uppercase tracking-widest font-bold text-navy/40 mb-1 block">Họ và tên</label>
+<input class="w-full bg-cream/50 border-0 border-b border-navy/10 py-3 text-sm focus:ring-0 focus:border-burgundy outline-none transition-colors" placeholder="Jean-Pierre..." type="text"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-bold text-navy/40 mb-1 block">Số điện thoại / Zalo</label>
+<input class="w-full bg-cream/50 border-0 border-b border-navy/10 py-3 text-sm focus:ring-0 focus:border-burgundy outline-none transition-colors" placeholder="090..." type="tel"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-bold text-navy/40 mb-1 block">Nội dung cần hỗ trợ</label>
+<textarea class="w-full bg-cream/50 border-0 border-b border-navy/10 py-3 text-sm focus:ring-0 focus:border-burgundy outline-none transition-colors h-24 resize-none" placeholder="Tôi muốn tìm hiểu lớp A1..."></textarea>
+</div>
+<button class="w-full bg-navy text-white text-[10px] font-bold uppercase tracking-[0.3em] py-5 mt-4 hover:bg-burgundy transition-all duration-300">Gửi thông tin</button>
+</form>
+</div>
+</div>
+</main>
+<footer class="bg-navy text-cream/60 py-20 px-6 md:px-20 mt-20 border-t-4 border-burgundy">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 text-cream mb-6">
+<div class="size-8 text-gold">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold uppercase tracking-widest leading-none">Aurore</h2>
+</div>
+<p class="text-sm italic leading-relaxed">
+                    Nơi khơi nguồn đam mê tiếng Pháp với phong cách giáo dục tinh hoa và tận tâm.
+                </p>
+</div>
+<div>
+<h4 class="text-cream text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Hệ sinh thái</h4>
+<ul class="text-sm space-y-4 font-sans uppercase tracking-widest text-[11px]">
+<li><a class="hover:text-gold transition-colors" href="#">Beacons Bio</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Cộng đồng Facebook</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Kho bài giảng YouTube</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-cream text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Thông tin</h4>
+<ul class="text-sm space-y-4 font-sans uppercase tracking-widest text-[11px]">
+<li><a class="hover:text-gold transition-colors" href="#">Chính sách bảo mật</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Tuyển dụng</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">Góp ý dịch vụ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-cream text-[10px] font-bold uppercase tracking-[0.3em] mb-8">Trụ sở chính</h4>
+<div class="space-y-4 text-sm italic">
+<p>Paris: 15 Rue de Rivoli, 75004</p>
+<p>Hà Nội: Quận Hoàn Kiếm</p>
+<p>contact@aurore.edu.vn</p>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-20 pt-8 border-t border-cream/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[10px] uppercase tracking-widest font-sans">© 2024 Tiếng Pháp Aurore. Maison d'Éducation.</p>
+<div class="flex gap-8">
+<a class="hover:text-gold transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="hover:text-gold transition-colors" href="#"><span class="material-symbols-outlined text-lg">chat_bubble</span></a>
+<a class="hover:text-gold transition-colors" href="#"><span class="material-symbols-outlined text-lg">camera</span></a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

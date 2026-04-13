@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Đội ngũ &amp; Thành tích Aurore - Tiếng Pháp Aurore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a2a44", // Navy
+                        "secondary": "#721c24", // Burgundy
+                        "accent": "#c5a059", // Gold/Champagne for premium feel
+                        "background-light": "#fcfaf7",
+                        "background-dark": "#0a0f18",
+                    },
+                    fontFamily: {
+                        "display": ["Playfair Display", "serif"],
+                        "sans": ["Montserrat", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">@layer base {
+    body {
+        @apply font-sans;
+        } h1, h2, h3, . font-display {
+        @apply font-display;
+        }
+    }
+.romantic-glow {
+    background: radial-gradient(circle at 20% 30%, rgba(197, 160, 89, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(114, 28, 36, 0.1) 0%, transparent 50%)
+    }
+.french-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBykjnhFfmV31TCznSogTLhPSatMDdkfb34L3U_ae4rlYreqcxLzHjqjKoAnSgskrNKheS8Es5lVSh7hkpbJgJ1ceJZJdfpDNjC31YjDoIR5MFbOcUrxcxCyul8lrb6oSF7kZ8ux_3tys4n8KRo9piGT9wWuZ_HTg0SxHNzuwst4wQRGsnmbQMral4iaERUA5-n08bGoqP3-nehlcvADZEBi4kU0vkkhvdtOD5rz1IZMr4WihvV88IFM9MM9IGqdD2QpcPytLlLErIp)
+    }
+.paris-silhouette {
+    background-image: linear-gradient(to top, rgba(252, 250, 247, 1), rgba(252, 250, 247, 0.4)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBn0KnpnCGvtJziZM9H4hzKoX6G3Y8OL6XXn2mvVEUYVtAE8xCJfKYnc-X3rkP8YXmC6xWiO_ya22Ah9T2ZEwQszYDiJQUY5Jz62BGy3IOnp0i62hmumM50iXdzS5FG7CWywJMtV-K27v8QzqBLlaUTHwK0ISQfvyHbPDH22R5cd9LGqhLg_Yt4grBW3CWmAao71tLqCZX-mQfwSb7Uo81GDHg5Uolo1w69NyPi-qEDewqgvc2UAnBb7NF9TuQV0ydua6ezVgXwFpii);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain
+    }
+.dark .paris-silhouette {
+    background-image: linear-gradient(to top, rgba(10, 15, 24, 1), rgba(10, 15, 24, 0.4)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuCaCRfbqujHbPGrCiLGUEYDotoUfXnk0Xy1doNnSVMiVYQrVxHMGHQMSxD7tvVnHtpC6iOHzXviIkcLIQjpWVXQLv90Qt6QgVV-aIokgZ399BdX2E5UEm3GxFXIeZHRAbow56Q4j_6l-Ar82ewIEYmNC6GAZYQ7I26-k9UlemJ4FvbgTU7s5nPMAVmReq9kQ6hIHDvH5Zf-Fe1NvMduDweviteKSQDTvRYlBgLrwuF0dSPnkj-OAvftZsJ7IyIVT3rxKvk17-cyCJ31)
+    }
+.instructor-card::after {
+    content: "";
+    @apply absolute inset-0 border border-accent/20 rounded-xl pointer-events-none m-2;
+    }
+.badge-academic {
+    @apply flex flex-col items-center justify-center p-6 bg-white dark: bg-slate-900 border border-accent/30 rounded-lg shadow-inner relative overflow-hidden;
+    }
+.badge-academic::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-secondary;
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-slate-200 transition-colors duration-300 french-texture">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden romantic-glow">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent/20 px-10 py-5 sticky top-0 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md z-50">
+<div class="flex items-center gap-4">
+<div class="size-10 text-secondary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs><clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath></defs>
+</svg>
+</div>
+<h2 class="text-primary dark:text-accent text-2xl font-bold leading-tight tracking-tight font-display italic">Aurore</h2>
+</div>
+<div class="flex flex-1 justify-end gap-10">
+<nav class="hidden md:flex items-center gap-10">
+<a class="hover:text-secondary transition-colors text-sm font-semibold tracking-wide" href="#">Đội ngũ</a>
+<a class="hover:text-secondary transition-colors text-sm font-semibold tracking-wide" href="#">Thành tích</a>
+<a class="hover:text-secondary transition-colors text-sm font-semibold tracking-wide" href="#">Chương trình</a>
+<a class="hover:text-secondary transition-colors text-sm font-semibold tracking-wide" href="#">Tuyển sinh</a>
+</nav>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-secondary text-white text-sm font-bold transition-all hover:bg-primary shadow-lg hover:shadow-secondary/30">
+<span>Đăng ký tư vấn</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center">
+<section class="w-full max-w-[1400px] px-6 py-12 md:py-20">
+<div class="@container">
+<div class="flex min-h-[500px] flex-col gap-8 bg-cover bg-center bg-no-repeat rounded-2xl items-center justify-center p-12 relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)]" style='background-image: linear-gradient(rgba(26, 42, 68, 0.7) 0%, rgba(114, 28, 36, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9EqqQaRL0iCNMHwzpDwDKVhV9RWigBlZkrNk0sTk5A_Zaa1PudJABxoZPUzd_MiYquXTmA8XoSm_yuhn8icvCWVNkIDNEbJM9eHSZDLdxDZFSuVfWKkFvHtH0pnDot-Rk0ddi4dMPGbw4SuewN13WYAcB_snJQhVO5kVB1599Jkl6NDy9QU6gU3j9tVimo4zkOBylK4JuQAwVazs1HSZa0BPp2E-AB2kTNqj7kFq6O5MAV3VM1TwBUhPaiN4T2kYJFpWk3YYvbrKZ");'>
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30"></div>
+<div class="flex flex-col gap-6 text-center max-w-4xl z-10">
+<span class="text-accent text-sm font-bold tracking-[0.3em] uppercase">Excellence en Français</span>
+<h1 class="text-white text-5xl font-bold leading-tight @[480px]:text-7xl font-display italic">
+                            Đội ngũ &amp; Thành tích
+                        </h1>
+<p class="text-white/90 text-xl font-light leading-relaxed max-w-2xl mx-auto font-sans">
+                            Nơi tinh hoa sư phạm hội tụ, thắp sáng hành trình chinh phục tiếng Pháp và vươn tới những đỉnh cao học thuật quốc tế.
+                        </p>
+</div>
+<div class="flex gap-4 z-10">
+<button class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-accent text-primary text-base font-bold transition-all hover:scale-105 shadow-xl">
+                            Tìm hiểu giảng viên
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1200px] px-6 py-16">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="text-4xl font-bold tracking-tight text-primary dark:text-accent font-display mb-4">Giảng viên Cao cấp</h2>
+<div class="flex items-center gap-3">
+<div class="h-[1px] w-12 bg-accent"></div>
+<span class="material-symbols-outlined text-accent">auto_awesome</span>
+<div class="h-[1px] w-12 bg-accent"></div>
+</div>
+<p class="mt-4 text-slate-500 max-w-xl font-light italic">Đội ngũ chuyên gia tốt nghiệp các trường Đại học danh tiếng tại Pháp với chứng chỉ DALF C2.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<div class="instructor-card group relative bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl transition-all hover:-translate-y-2">
+<div class="relative w-full aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBX3ilv61jxfuihInH5WvCfe9TuRbJPPacv7vSIHMPGGY8HX_nm3N540-13qVk9H5jTjTRzELWNfRx3-XuPF8r2sS8Ddf790f4Gaiwzh8A-pelODfBw3dusFymUSIdHiNA5hGJ0EMMNT5UKXHAmi-9TSQq7jws80CyVnSAFKCv6f6N5xRg4-huoJXcTWZyE1iTVhDEqt9wuD9pSGaP-OBlCSwyXU7QhVTMJGf2LIOwuccj4mlqwYeZQfpLjx9R0yO6jInm2Eu4PkVAA");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<p class="text-white text-sm italic font-display">"La langue est le reflet d'une culture."</p>
+</div>
+</div>
+<div class="text-center px-4 pb-4">
+<h3 class="text-secondary text-2xl font-bold font-display italic mb-1">Mme. Isabelle Trịnh</h3>
+<p class="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-4">Master FLE • DALF C2</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-light">
+                            Chuyên gia sư phạm với 10 năm kinh nghiệm tại các tổ chức quốc tế, kiến tạo lộ trình học thuật bài bản.
+                        </p>
+</div>
+</div>
+<div class="instructor-card group relative bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl transition-all hover:-translate-y-2 border border-accent/10">
+<div class="absolute -top-3 -right-3 bg-accent text-primary text-[10px] font-bold px-3 py-1 rounded-full z-20 shadow-lg tracking-tighter">ELITE MENTOR</div>
+<div class="relative w-full aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzS6hrleY2FsFaeVH2TdS4Ins3MNDvEWH2jthJ_ZaB4GRVk3Dc4SB2FlZgnPPDCqG6mURsdZif5DKt5JeL2sHEcroGPXlwIZZxJmrHM9R6SWtQJ1VuoY8t0Wojv1obLOoD0_MdSUO7gVEQ6btNQMQo-jRGG__Pu2z2yOw_2Xrz3um-npKnswXfPBS_C8zkbcUSdiPsn-mPBXg1vwT-T03Qn2gPzRzDSz3yhHuImsNmb9XSeD9oP10YVTgQPQhxBhX41fC2W68TK6m4");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<p class="text-white text-sm italic font-display">"L'éducation est l'arme la plus puissante."</p>
+</div>
+</div>
+<div class="text-center px-4 pb-4">
+<h3 class="text-secondary text-2xl font-bold font-display italic mb-1">M. Jean Nguyễn</h3>
+<p class="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-4">PhD Lingustics • Sorbonne</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-light">
+                            Giảng viên đại học chuyên luyện thi DALF C1/C2 với tỉ lệ học viên đạt kết quả xuất sắc trên 95%.
+                        </p>
+</div>
+</div>
+<div class="instructor-card group relative bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl transition-all hover:-translate-y-2">
+<div class="relative w-full aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyBpCq1I6koin0OrIwxs13LdxAkxkIHIe8im6PpiN2Fjmjeew3d4rO2VrK-AK934ahGafBV1j2jmBoT-ZmLuTpMXCrX9ykfhSpeJz0t6wYa0oXvHf8cFLkr4YS_K6QikphDTzj_-XHjILazIGKWoZVHAf8qwiyLuP_YzziZ-aW85ti12yXWFhodOnaOJ6vHzgaBY3rre8OtbJXOw3JaTYC1WCALxAiGW20DaFW0t76ScBVGbBafhiDjIViZ-YKYMajtaS4EAXM0Oq_");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<p class="text-white text-sm italic font-display">"Apprendre avec passion et plaisir."</p>
+</div>
+</div>
+<div class="text-center px-4 pb-4">
+<h3 class="text-secondary text-2xl font-bold font-display italic mb-1">Mme. Sophie Lê</h3>
+<p class="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-4">Cử nhân Sư phạm Pháp</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-light">
+                            Người truyền lửa đam mê qua phương pháp phản xạ, giúp học viên xóa bỏ rào cản tâm lý khi giao tiếp.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full bg-primary/5 dark:bg-white/5 py-24 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
+<div class="max-w-[1200px] mx-auto px-6 relative z-10">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="text-4xl font-bold text-primary dark:text-accent font-display mb-4 italic">Bảng Vàng Thành Tích</h2>
+<p class="text-secondary font-medium tracking-widest uppercase text-xs">Chứng chỉ quốc tế DELF - DALF</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="badge-academic">
+<div class="mb-3 text-secondary">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+</div>
+<h3 class="text-4xl font-bold text-primary dark:text-white font-display">500+</h3>
+<p class="text-[10px] text-accent font-bold uppercase tracking-widest mt-2">Bằng DELF B2</p>
+</div>
+<div class="badge-academic">
+<div class="mb-3 text-secondary">
+<span class="material-symbols-outlined text-4xl">school</span>
+</div>
+<h3 class="text-4xl font-bold text-primary dark:text-white font-display">120+</h3>
+<p class="text-[10px] text-accent font-bold uppercase tracking-widest mt-2">Bằng DALF C1/C2</p>
+</div>
+<div class="badge-academic">
+<div class="mb-3 text-secondary">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<h3 class="text-4xl font-bold text-primary dark:text-white font-display">98%</h3>
+<p class="text-[10px] text-accent font-bold uppercase tracking-widest mt-2">Tỉ lệ thi đỗ</p>
+</div>
+<div class="badge-academic">
+<div class="mb-3 text-secondary">
+<span class="material-symbols-outlined text-4xl">military_tech</span>
+</div>
+<h3 class="text-4xl font-bold text-primary dark:text-white font-display">2000+</h3>
+<p class="text-[10px] text-accent font-bold uppercase tracking-widest mt-2">Học viên tin dùng</p>
+</div>
+</div>
+<div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative p-10 bg-white dark:bg-slate-900/50 rounded-2xl border-l-4 border-secondary shadow-lg italic overflow-hidden">
+<div class="absolute -top-4 -right-4 text-primary/5 scale-150">
+<span class="material-symbols-outlined text-[120px]">format_quote</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-6 relative z-10">
+                            "Lộ trình học 1-1 tại Aurore không chỉ là học ngôn ngữ, mà là sự định hướng tư duy học thuật. Mình đã đạt DALF C1 chỉ sau một khóa ôn cấp tốc."
+                        </p>
+<div class="flex items-center gap-4 relative z-10">
+<div class="w-10 h-px bg-accent"></div>
+<p class="text-primary dark:text-accent font-bold text-sm tracking-wide">Minh Anh — Du học sinh Sorbonne</p>
+</div>
+</div>
+<div class="relative p-10 bg-white dark:bg-slate-900/50 rounded-2xl border-l-4 border-primary shadow-lg italic overflow-hidden">
+<div class="absolute -top-4 -right-4 text-primary/5 scale-150">
+<span class="material-symbols-outlined text-[120px]">format_quote</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-6 relative z-10">
+                            "Phương pháp của các thầy cô giúp mình tự tin 100% khi phỏng vấn học bổng. Aurore thực sự là bệ phóng vững chắc cho ước mơ Pháp của mình."
+                        </p>
+<div class="flex items-center gap-4 relative z-10">
+<div class="w-10 h-px bg-accent"></div>
+<p class="text-primary dark:text-accent font-bold text-sm tracking-wide">Tuấn Kiệt — Học viên DELF B2</p>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
+</section>
+<section class="w-full max-w-[1100px] px-6 py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group relative bg-white dark:bg-slate-900 p-12 rounded-[2rem] border border-accent/10 shadow-2xl flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 right-0 p-8 text-accent/10 group-hover:text-accent/20 transition-colors">
+<span class="material-symbols-outlined text-8xl">self_improvement</span>
+</div>
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-secondary text-4xl">person_search</span>
+<h3 class="text-3xl font-bold font-display italic text-primary dark:text-accent">Tư vấn 1-1</h3>
+</div>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-10 text-lg font-light">
+                            Cá nhân hóa lộ trình dựa trên năng lực và mục tiêu định cư, du học hoặc làm việc. Học trực tiếp với chuyên gia cao cấp nhất.
+                        </p>
+</div>
+<button class="w-full bg-primary text-white font-bold py-5 rounded-xl hover:bg-secondary transition-all shadow-xl hover:shadow-secondary/20 uppercase tracking-widest text-xs">
+                        Đặt lịch hội chẩn trình độ
+                    </button>
+</div>
+<div class="group relative bg-secondary p-12 rounded-[2rem] shadow-2xl flex flex-col justify-between overflow-hidden text-white">
+<div class="absolute top-0 right-0 p-8 text-white/5 group-hover:text-white/10 transition-colors">
+<span class="material-symbols-outlined text-8xl">history_edu</span>
+</div>
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-accent text-4xl">edit_document</span>
+<h3 class="text-3xl font-bold font-display italic">Yêu cầu đặc biệt</h3>
+</div>
+<p class="text-white/80 leading-relaxed mb-10 text-lg font-light">
+                            Hỗ trợ viết thư động lực (Lettre de motivation), sửa CV học thuật, hoặc luyện phỏng vấn Campus France theo yêu cầu riêng biệt.
+                        </p>
+</div>
+<button class="w-full bg-white text-secondary font-bold py-5 rounded-xl hover:bg-accent hover:text-primary transition-all shadow-xl uppercase tracking-widest text-xs">
+                        Gửi hồ sơ yêu cầu
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full paris-silhouette pt-52 pb-12 flex flex-col items-center">
+<div class="max-w-[1100px] w-full px-10 grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-accent/20 pt-16">
+<div class="flex flex-col gap-6 col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 text-primary dark:text-accent">
+<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+<h4 class="font-display text-2xl font-bold italic">Aurore French Institute</h4>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed max-w-sm">
+                    Khai phóng tiềm năng ngôn ngữ thông qua môi trường học thuật chuẩn Pháp. Aurore đồng hành cùng bạn trên con đường kiến tạo tương lai tại Châu Âu.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-xs uppercase tracking-[0.3em] text-secondary mb-2">Liên hệ</h4>
+<div class="flex flex-col gap-3">
+<p class="text-xs flex items-center gap-3 text-slate-600 dark:text-slate-400"><span class="material-symbols-outlined text-lg text-accent">mail</span> contact@aurore.edu.vn</p>
+<p class="text-xs flex items-center gap-3 text-slate-600 dark:text-slate-400"><span class="material-symbols-outlined text-lg text-accent">call</span> (+84) 988 123 456</p>
+<p class="text-xs flex items-center gap-3 text-slate-600 dark:text-slate-400"><span class="material-symbols-outlined text-lg text-accent">location_on</span> Quận 1, TP. Hồ Chí Minh</p>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold text-xs uppercase tracking-[0.3em] text-secondary mb-2">Réseaux Sociaux</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-accent/30 flex items-center justify-center text-primary dark:text-accent hover:bg-accent hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">public</span></a>
+<a class="w-10 h-10 rounded-full border border-accent/30 flex items-center justify-center text-primary dark:text-accent hover:bg-accent hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="w-10 h-10 rounded-full border border-accent/30 flex items-center justify-center text-primary dark:text-accent hover:bg-accent hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">menu_book</span></a>
+</div>
+</div>
+</div>
+<div class="mt-24 text-[9px] text-slate-400 uppercase tracking-[0.4em]">
+            © 2024 AURORE FRENCH INSTITUTE. TOUS DROITS RÉSERVÉS.
+        </div>
+</footer>
+</div>
+</div>
+<div class="fixed bottom-8 right-8 z-[100]">
+<button class="bg-primary text-accent shadow-[0_10px_30px_rgba(0,0,0,0.3)] rounded-full p-4 border border-accent/20 hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
+</div>
+
+</body></html>

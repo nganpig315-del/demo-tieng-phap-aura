@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thư viện học liệu cao cấp Aurore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a237e",
+                        "navy-deep": "#0a1045",
+                        "burgundy": "#800020",
+                        "burgundy-light": "#a31d3d",
+                        "parchment": "#fdfbf7",
+                        "parchment-dark": "#f5f2e8",
+                        "french-cream": "#f8f7f2"
+                    },
+                    fontFamily: {
+                        "display": ["Playfair Display", "serif"],
+                        "sans": ["Manrope", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'parchment-texture': "url('https://www.transparenttextures.com/patterns/paper-fibers.png')",
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">@layer base {
+    body {
+        @apply bg-french-cream text-slate-900 font-sans;
+        }
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.dossier-card {
+    position: relative;
+    background: #fffefc;
+    border: 1px solid #e2decb;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.03), inset 0 0 40px rgba(229, 225, 211, 0.1);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
+    }
+.dossier-card:hover {
+    transform: translatey(-6px) rotate(0.5deg);
+    box-shadow: 15px 15px 30px -10px rgba(26, 35, 126, 0.1)
+    }
+.dossier-tab {
+    position: absolute;
+    top: -14px;
+    left: 24px;
+    height: 28px;
+    width: 100px;
+    background: #e2decb;
+    clip-path: polygon(0% 100%, 12% 0%, 88% 0%, 100% 100%);
+    z-index: 1
+    }
+.dossier-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDhqN6Nx85REwaq5np_VM0sWixSOgCwGfrXumceOgxf3tdhvkoes-SQ1IjM4sHsVZ-2mg2LZGsasNehYCWCD_kw98jAcAm0iZ1YL_Sff-y6T2OoE_o0k2rW_FETQjPWWRCJYGaFJrABij6oQmoo1c9zKl0T4LDpnY13DNly5olMcn4gH2Y_sWDQrZRg-yww79GN6AG2zDdd8rCSBC76gELs29p-dAF0aIulJ7MPAOMaifspypO0Gr8XtmOd1N-Xfgt9gThcIcMfs5U_);
+    opacity: 0.4;
+    pointer-events: none;
+    border-radius: inherit
+    }
+.sticky-search-bar {
+    @apply sticky top- [73px]z-40 backdrop-blur-md bg-french-cream/80 border-b border-primary/5 transition-all duration-300;
+    }</style>
+</head>
+<body class="min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-burgundy/20 px-6 lg:px-10 py-4 bg-navy-deep text-white sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="size-9 bg-burgundy rounded-lg flex items-center justify-center shadow-lg">
+<svg class="size-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div>
+<h2 class="text-white text-xl font-display italic font-bold leading-tight tracking-tight">Aurore Bibliothèque</h2>
+<p class="text-[10px] uppercase tracking-[0.2em] text-burgundy-light font-bold">Archives de Luxe</p>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9 hidden lg:flex">
+<a class="text-white/70 text-sm font-medium hover:text-white transition-colors" href="#">Accueil</a>
+<a class="text-white text-sm font-bold border-b-2 border-burgundy pb-1" href="#">Bibliothèque</a>
+<a class="text-white/70 text-sm font-medium hover:text-white transition-colors" href="#">Cursus</a>
+<a class="text-white/70 text-sm font-medium hover:text-white transition-colors" href="#">Communauté</a>
+</nav>
+<div class="flex items-center gap-4 border-l border-white/10 pl-8">
+<div class="text-right hidden sm:block">
+<p class="text-xs font-bold text-white">Jean-Luc Picard</p>
+<p class="text-[10px] text-white/50 uppercase">Niveau B1</p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 ring-2 ring-burgundy shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5aSw3w1ggyDarvyBry1rPtg3hQyGRSRP31_VcNVbXkE3UC7Y8eQUsUPw7MAAs_Icg9TwDG9pQox4PIp67VqtUhYM5xFkjp0zagvxeqqB09kxOuZm0FK6dhWetgUxzPUKbp5W8Yu2LqUDvGQK9OYHxX9pZlbA8-i_bDTzQ31SmPxRalvFeulFi9CKrHfVi67PjFulrBFjbuxCTTjxoiBt6PV5sw_d3iIL1ckxwhPr-kQdM9kxG9QjQAAaBYbUDvWCgGBis5-y4BxJp");'></div>
+</div>
+</div>
+</header>
+<main class="flex flex-1 flex-col">
+<section class="bg-navy-deep text-white pt-16 pb-24 px-6 lg:px-10 overflow-hidden relative">
+<div class="absolute right-[-5%] top-[-10%] opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]">auto_stories</span>
+</div>
+<div class="max-w-[1200px] mx-auto relative z-10">
+<span class="inline-block px-3 py-1 bg-burgundy/30 border border-burgundy/50 text-burgundy-light rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">Accès Premium</span>
+<h1 class="font-display italic text-5xl md:text-6xl font-black leading-tight max-w-3xl mb-6">Thư viện học liệu cao cấp Aurore</h1>
+<p class="text-slate-300 text-lg md:text-xl max-w-2xl font-light leading-relaxed">
+                    Khám phá "tủ hồ sơ kỹ thuật số" độc quyền. Nơi lưu trữ tinh hoa ngôn ngữ và văn hóa Pháp, được thiết kế riêng cho hành trình chinh phục ngôn ngữ của bạn.
+                </p>
+</div>
+</section>
+<div class="sticky-search-bar px-6 lg:px-10 py-4 shadow-sm">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-4 items-center">
+<div class="relative flex-1 w-full group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-burgundy transition-colors">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-white/50 border-slate-200 rounded-xl focus:ring-burgundy focus:border-burgundy text-sm transition-all" placeholder="Tìm kiếm tài liệu, giáo trình, bài tập..." type="text"/>
+</div>
+<div class="flex items-center gap-2 p-1 bg-slate-100 rounded-xl w-full md:w-auto overflow-x-auto">
+<button class="px-5 py-2 bg-burgundy text-white rounded-lg text-xs font-bold whitespace-nowrap shadow-md">Tất cả</button>
+<button class="px-5 py-2 hover:bg-white rounded-lg text-xs font-bold text-slate-600 transition-all">A1 Beginner</button>
+<button class="px-5 py-2 hover:bg-white rounded-lg text-xs font-bold text-slate-600 transition-all">A2 Element</button>
+<button class="px-5 py-2 hover:bg-white rounded-lg text-xs font-bold text-slate-600 transition-all">B1 Inter</button>
+<button class="px-5 py-2 hover:bg-white rounded-lg text-xs font-bold text-slate-600 transition-all">B2 Advanced</button>
+</div>
+</div>
+</div>
+<div class="layout-content-container flex flex-col max-w-[1200px] mx-auto w-full px-6 lg:px-10 py-12 gap-16">
+<section class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<h2 class="text-2xl font-display italic font-bold text-navy-deep">Recommandé pour votre niveau (B1)</h2>
+<div class="h-px flex-1 bg-gradient-to-r from-burgundy/20 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-parchment-dark border border-burgundy/10 rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-all group">
+<div class="size-16 shrink-0 bg-white rounded-xl flex items-center justify-center border border-slate-100 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-burgundy text-3xl">menu_book</span>
+</div>
+<div>
+<span class="text-[10px] font-bold text-burgundy uppercase tracking-tighter">Luyện đọc</span>
+<h3 class="font-bold text-navy-deep mt-1">Le Petit Nicolas - Chapitre 4</h3>
+<p class="text-xs text-slate-500 mt-2 line-clamp-2">Phân tích cấu trúc câu và từ vựng thông dụng trong văn phong kể chuyện.</p>
+<button class="mt-4 text-xs font-bold text-burgundy flex items-center gap-1 hover:gap-2 transition-all">
+                                Xem tài liệu <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="bg-parchment-dark border border-burgundy/10 rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-all group">
+<div class="size-16 shrink-0 bg-white rounded-xl flex items-center justify-center border border-slate-100 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-burgundy text-3xl">podcasts</span>
+</div>
+<div>
+<span class="text-[10px] font-bold text-burgundy uppercase tracking-tighter">Luyện nghe</span>
+<h3 class="font-bold text-navy-deep mt-1">L'actualité en Français Facile</h3>
+<p class="text-xs text-slate-500 mt-2 line-clamp-2">Bản tin thời sự tuần này với tốc độ đọc chậm dành riêng cho trình độ B1.</p>
+<button class="mt-4 text-xs font-bold text-burgundy flex items-center gap-1 hover:gap-2 transition-all">
+                                Nghe ngay <span class="material-symbols-outlined text-sm">play_circle</span>
+</button>
+</div>
+</div>
+<div class="bg-parchment-dark border border-burgundy/10 rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-all group">
+<div class="size-16 shrink-0 bg-white rounded-xl flex items-center justify-center border border-slate-100 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-burgundy text-3xl">edit_square</span>
+</div>
+<div>
+<span class="text-[10px] font-bold text-burgundy uppercase tracking-tighter">Ngữ pháp</span>
+<h3 class="font-bold text-navy-deep mt-1">Le Subjonctif Présent</h3>
+<p class="text-xs text-slate-500 mt-2 line-clamp-2">Tổng hợp các trường hợp sử dụng giả định cách và bài tập tự luyện.</p>
+<button class="mt-4 text-xs font-bold text-burgundy flex items-center gap-1 hover:gap-2 transition-all">
+                                Tải bài tập <span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<div class="dossier-card rounded-tr-xl rounded-b-xl p-8 pt-10 group cursor-pointer">
+<div class="dossier-tab"></div>
+<div class="flex flex-col h-full relative z-10">
+<div class="mb-6 text-burgundy bg-burgundy/5 size-14 rounded-2xl flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-3xl">auto_stories</span>
+</div>
+<h3 class="text-2xl font-display italic font-bold text-navy-deep mb-3">Sách giáo khoa</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-8 flex-1">Archives des manuels: Giáo trình chính khóa và các bộ sách bổ trợ cao cấp.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest border-b border-slate-100 pb-3">
+<span class="text-slate-400">24 Documents</span>
+<span class="text-burgundy italic">Mise à jour</span>
+</div>
+<button class="w-full py-3.5 bg-navy-deep text-white rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 group-hover:bg-burgundy transition-all">
+<span class="material-symbols-outlined text-lg">folder_open</span>
+                                Ouvrir le dossier
+                            </button>
+</div>
+</div>
+</div>
+<div class="dossier-card rounded-tr-xl rounded-b-xl p-8 pt-10 group cursor-pointer">
+<div class="dossier-tab" style="left: 120px;"></div>
+<div class="flex flex-col h-full relative z-10">
+<div class="mb-6 text-burgundy bg-burgundy/5 size-14 rounded-2xl flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-3xl">headphones</span>
+</div>
+<h3 class="text-2xl font-display italic font-bold text-navy-deep mb-3">Bài nghe (Audio)</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-8 flex-1">Ressources audio: File âm thanh đi kèm giáo trình và Podcast độc quyền.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest border-b border-slate-100 pb-3">
+<span class="text-slate-400">156 Pistes</span>
+<span class="text-slate-400">1.2 GB</span>
+</div>
+<button class="w-full py-3.5 bg-navy-deep text-white rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 group-hover:bg-burgundy transition-all">
+<span class="material-symbols-outlined text-lg">download</span>
+                                Tout télécharger
+                            </button>
+</div>
+</div>
+</div>
+<div class="dossier-card rounded-tr-xl rounded-b-xl p-8 pt-10 group cursor-pointer">
+<div class="dossier-tab" style="left: 60px;"></div>
+<div class="flex flex-col h-full relative z-10">
+<div class="mb-6 text-burgundy bg-burgundy/5 size-14 rounded-2xl flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-3xl">edit_note</span>
+</div>
+<h3 class="text-2xl font-display italic font-bold text-navy-deep mb-3">Bài tập (Devoirs)</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-8 flex-1">Cahier d'exercices: Phiếu bài tập hàng tuần và lời giải chi tiết.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest border-b border-slate-100 pb-3">
+<span class="text-slate-400">42 Dossiers</span>
+<span class="text-red-700 font-black">À compléter</span>
+</div>
+<button class="w-full py-3.5 bg-navy-deep text-white rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 group-hover:bg-burgundy transition-all">
+<span class="material-symbols-outlined text-lg">visibility</span>
+                                Voir devoirs
+                            </button>
+</div>
+</div>
+</div>
+<div class="dossier-card rounded-tr-xl rounded-b-xl p-8 pt-10 group cursor-pointer">
+<div class="dossier-tab" style="left: 140px;"></div>
+<div class="flex flex-col h-full relative z-10">
+<div class="mb-6 text-burgundy bg-burgundy/5 size-14 rounded-2xl flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-3xl">castle</span>
+</div>
+<h3 class="text-2xl font-display italic font-bold text-navy-deep mb-3">Văn hóa Pháp</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-8 flex-1">Civilisation française: Tư liệu đời sống, tạp chí và phim ngắn.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest border-b border-slate-100 pb-3">
+<span class="text-slate-400">18 Documents</span>
+<span class="text-burgundy italic">Exclusif</span>
+</div>
+<button class="w-full py-3.5 bg-navy-deep text-white rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 group-hover:bg-burgundy transition-all">
+<span class="material-symbols-outlined text-lg">explore</span>
+                                Découvrir
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="flex items-end justify-between border-b border-slate-200 pb-4">
+<div>
+<h2 class="text-3xl font-display italic font-bold text-navy-deep">Tài liệu mới nhất</h2>
+<p class="text-sm text-slate-500 mt-1">Dernières mises à jour de votre bibliothèque digitale.</p>
+</div>
+<a class="text-xs font-bold text-burgundy uppercase tracking-widest hover:underline flex items-center gap-2" href="#">
+                        Tất cả tệp <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<div class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
+<table class="w-full text-left text-sm">
+<thead class="bg-navy-deep text-white/70 uppercase text-[10px] font-bold tracking-widest">
+<tr>
+<th class="px-8 py-5">Tài liệu &amp; Định dạng</th>
+<th class="px-6 py-5">Cấp độ</th>
+<th class="px-6 py-5">Trạng thái</th>
+<th class="px-6 py-5">Ngày tải</th>
+<th class="px-8 py-5 text-right">Thao tác</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-50">
+<tr class="hover:bg-parchment transition-colors group">
+<td class="px-8 py-5">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition-all">
+<span class="material-symbols-outlined">picture_as_pdf</span>
+</div>
+<div>
+<p class="font-bold text-navy-deep">Grammaire Progressive - Niveau A1.pdf</p>
+<p class="text-[10px] text-slate-400 uppercase font-medium">Document PDF • 4.5 MB</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-5">
+<span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-[10px] font-black border border-blue-100">A1</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex items-center gap-1.5 text-emerald-600">
+<span class="size-1.5 rounded-full bg-emerald-600"></span>
+<span class="text-[10px] font-bold uppercase tracking-tight">Sẵn sàng</span>
+</div>
+</td>
+<td class="px-6 py-5 text-slate-500 font-medium">Hôm nay</td>
+<td class="px-8 py-5 text-right">
+<button class="p-2.5 bg-slate-50 hover:bg-burgundy hover:text-white rounded-xl text-navy-deep transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-parchment transition-colors group border-l-4 border-l-transparent hover:border-l-burgundy">
+<td class="px-8 py-5">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-all">
+<span class="material-symbols-outlined">audio_file</span>
+</div>
+<div>
+<p class="font-bold text-navy-deep">Compréhension Orale - Session 12.mp3</p>
+<p class="text-[10px] text-slate-400 uppercase font-medium">Fichier Audio • 12.8 MB</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-5">
+<span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-md text-[10px] font-black border border-indigo-100">B1</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex items-center gap-1.5 text-amber-600">
+<span class="size-1.5 rounded-full bg-amber-600"></span>
+<span class="text-[10px] font-bold uppercase tracking-tight">Đang tải</span>
+</div>
+</td>
+<td class="px-6 py-5 text-slate-500 font-medium">3 ngày trước</td>
+<td class="px-8 py-5 text-right">
+<button class="p-2.5 bg-slate-50 hover:bg-burgundy hover:text-white rounded-xl text-navy-deep transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-parchment transition-colors group">
+<td class="px-8 py-5">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<p class="font-bold text-navy-deep">Vocabulaire de la gastronomie.docx</p>
+<p class="text-[10px] text-slate-400 uppercase font-medium">MS Word • 1.2 MB</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-5">
+<span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-md text-[10px] font-black border border-emerald-100">A2</span>
+</td>
+<td class="px-6 py-5">
+<div class="flex items-center gap-1.5 text-slate-400">
+<span class="size-1.5 rounded-full bg-slate-300"></span>
+<span class="text-[10px] font-bold uppercase tracking-tight">Đã xem</span>
+</div>
+</td>
+<td class="px-6 py-5 text-slate-500 font-medium">1 tuần trước</td>
+<td class="px-8 py-5 text-right">
+<button class="p-2.5 bg-slate-50 hover:bg-burgundy hover:text-white rounded-xl text-navy-deep transition-all shadow-sm">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 py-16 px-6 lg:px-10 border-t border-slate-200 bg-white relative overflow-hidden">
+<div class="absolute inset-0 bg-parchment-texture opacity-20 pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto relative z-10 flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-xs">
+<div class="flex items-center gap-3 text-navy-deep mb-6">
+<div class="size-8 bg-burgundy rounded flex items-center justify-center text-white">
+<svg class="size-5" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-sm font-display italic font-bold uppercase tracking-widest">Aurore Education</span>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed">
+                    Hệ sinh thái học tập Tiếng Pháp cao cấp. Bản quyền thuộc về Aurore © 2024.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div>
+<h4 class="text-[10px] font-black uppercase tracking-widest text-burgundy mb-4">Bibliothèque</h4>
+<ul class="flex flex-col gap-2 text-sm text-slate-500">
+<li><a class="hover:text-burgundy transition-colors" href="#">Livres</a></li>
+<li><a class="hover:text-burgundy transition-colors" href="#">Audios</a></li>
+<li><a class="hover:text-burgundy transition-colors" href="#">Archives</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[10px] font-black uppercase tracking-widest text-burgundy mb-4">Aide</h4>
+<ul class="flex flex-col gap-2 text-sm text-slate-500">
+<li><a class="hover:text-burgundy transition-colors" href="#">Support</a></li>
+<li><a class="hover:text-burgundy transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-burgundy transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[10px] font-black uppercase tracking-widest text-burgundy mb-4">Social</h4>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-slate-100 flex items-center justify-center text-navy-deep hover:bg-burgundy hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="size-8 rounded-full bg-slate-100 flex items-center justify-center text-navy-deep hover:bg-burgundy hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-16 pt-8 border-t border-slate-100 text-center">
+<p class="text-[10px] text-slate-400 uppercase tracking-[0.3em]">Excellence en Français • Paris - Hanoi</p>
+</div>
+</footer>
+</div>
+
+</body></html>
